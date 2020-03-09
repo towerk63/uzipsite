@@ -366,6 +366,7 @@ a:hover {
 .show_profile_mngm_img_o img {
   border-radius: 50%;
   overflow: hidden;
+  width: 100%;
 }
 
 .show_profile_mngm_o {

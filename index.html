@@ -1,857 +1,989 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UZip</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UZip</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <!-- <link rel="stylesheet" href="style/style.css"> -->
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</head>
-
-<body>
-  <nav id="sidebar_mobile" class="sidebar_mobile container-fluid">
-    <div class="row">
-      <!-- khu vực tắt -->
-      <div id="nav_close" class="nav_close col-7"></div>
-      <!-- sidebar mobile show -->
-      <ul class="nav nav_menu_mobile justify-content-end col-5">
-        <button id="close_menu_mb" class="close_menu_mb">
-          <i class="fas fa-window-close"></i>
-        </button>
-        <li id="nav_item_au_mb" class="nav-item-mobile">
-          <a class="nav-link-mobile" href="#main_news_first">About us&nbsp;
-            <i id="nav_link_icon_au" class="fas fa-sort-down"></i></a>
-          <ul id="nav_item_au_mb_show" class="nav-item-clone-mobile">
-            <li><a href="#mngmt">Management Team</a></li>
-            <li><a href="#Advisors">Advisors</a></li>
-          </ul>
-        </li>
-        <li class="nav-item-mobile">
-          <a class="nav-link-mobile" href="#pptl">Patent-pending</a>
-        </li>
-        <li class="nav-item-mobile">
-          <a class="nav-link-mobile" href="#Platform">DaaS Platform</a>
-        </li>
-        <li id="nav_item_alcs_mb" class="nav-item-mobile">
-          <a class="nav-link-mobile" href="#">Application&nbsp;
-            <i id="nav_link_icon_alcs" class="fas fa-sort-down"></i></a>
-          <ul id="nav_item_alcs_mb_show" class="nav-item-clone-mobile">
-            <li><a href="#farming">Farming</a></li>
-            <li><a href="#Business">Business</a></li>
-            <li><a href="#military">Military</a></li>
-            <li><a href="#areas">Others</a></li>
-          </ul>
-        </li>
-        <li id="nav_item_n_mb" class="nav-item-mobile">
-          <a class="nav-link-mobile" href="#">News&nbsp; <i id="nav_link_icon_n" class="fas fa-sort-down"></i></a>
-          <ul id="nav_item_n_mb_show" class="nav-item-clone-mobile">
-            <li>
-              <a href="#Global">Global Market News</a>
-            </li>
-            <li>
-              <a href="#Release">Press Release and Company News</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item-mobile">
-          <a class="nav-link-mobile" href="#ftft">Contact us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="container-fluid">
-    <div id="header_menu_main" class="container header_menu_main">
-      <div class="row header_menu_main_row">
-        <div class="logo_header col-12 col-sm-12 col-md-2">
-          <a href="index.html">
-            <img src="image/logo.png" alt="" />
-          </a>
-        </div>
-        <nav class="nav_menu col-12 col-sm-12 col-md-10">
-          <ul class="nav nav_menu_ul justify-content-end">
-            <li id="nav_item_au" class="nav-item">
-              <a class="nav-link" href="#main_news_first" target="_self">About us&nbsp;
-                <i id="nav_link_icon_au" class="fas fa-sort-down"></i></a>
-              <ul class="nav-item-clone">
-                <li><a href="#mngmt">Management Team</a></li>
-                <li><a href="#Advisors">Advisors</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pptl">Patent-pending</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Platform">DaaS Platform</a>
-            </li>
-            <li id="nav_item_alcs" class="nav-item">
-              <a class="nav-link" href="#">Application&nbsp;
-                <i id="nav_link_icon_alcs" class="fas fa-sort-down"></i></a>
-              <ul class="nav-item-clone">
-                <li><a href="#farming">Farming</a></li>
-                <li><a href="#Business">Business</a></li>
-                <li><a href="#military">Military</a></li>
-                <li><a href="#areas">Others</a></li>
-              </ul>
-            </li>
-            <li id="nav_item_n" class="nav-item">
-              <a class="nav-link" href="#">News&nbsp;
-                <i id="nav_link_icon_n" class="fas fa-sort-down"></i></a>
-              <ul class="nav-item-clone">
-                <li>
-                  <a href="#Global">Global Market News</a>
-                </li>
-                <li>
-                  <a href="#Release">Press Release and Company News</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ftft">Contact us</a>
-            </li>
-          </ul>
-          <div class="nav_dbtn_header">
-            <button id="nav_btn_header" class="nav_btn_header">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-        </nav>
+  <body>
+    <nav id="sidebar_mobile" class="sidebar_mobile container-fluid">
+      <div class="row">
+        <!-- khu vực tắt -->
+        <div id="nav_close" class="nav_close col-7"></div>
+        <!-- sidebar mobile show -->
+        <ul class="nav nav_menu_mobile justify-content-end col-5">
+          <button id="close_menu_mb" class="close_menu_mb">
+            <i class="fas fa-window-close"></i>
+          </button>
+          <li id="nav_item_au_mb" class="nav-item-mobile">
+            <a class="nav-link-mobile" href="#main_news_first"
+              >About us&nbsp;
+              <i id="nav_link_icon_au" class="fas fa-sort-down"></i
+            ></a>
+            <ul id="nav_item_au_mb_show" class="nav-item-clone-mobile">
+              <li><a href="#mngmt">Management Team</a></li>
+              <li><a href="#Advisors">Advisors</a></li>
+            </ul>
+          </li>
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="#pptl">Patent-pending</a>
+          </li>
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="#Platform">DaaS Platform</a>
+          </li>
+          <li id="nav_item_alcs_mb" class="nav-item-mobile">
+            <a class="nav-link-mobile" href="#"
+              >Application&nbsp;
+              <i id="nav_link_icon_alcs" class="fas fa-sort-down"></i
+            ></a>
+            <ul id="nav_item_alcs_mb_show" class="nav-item-clone-mobile">
+              <li><a href="#farming">Farming</a></li>
+              <li><a href="#Business">Business</a></li>
+              <li><a href="#military">Military</a></li>
+              <li><a href="#areas">Others</a></li>
+            </ul>
+          </li>
+          <li id="nav_item_n_mb" class="nav-item-mobile">
+            <a class="nav-link-mobile" href="#"
+              >News&nbsp; <i id="nav_link_icon_n" class="fas fa-sort-down"></i
+            ></a>
+            <ul id="nav_item_n_mb_show" class="nav-item-clone-mobile">
+              <li>
+                <a href="#Global">Global Market News</a>
+              </li>
+              <li>
+                <a href="#Release">Press Release and Company News</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="#ftft">Contact us</a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="video_banner">
-      <video autoplay muted loop id="video_banner">
-        <source src="video/splash_v3.webm" type="video/mp4" />
-      </video>
+    </nav>
 
-      <div class="content_banner">
+    <header class="container-fluid">
+      <div id="header_menu_main" class="container header_menu_main">
+        <div class="row header_menu_main_row">
+          <div class="logo_header col-12 col-sm-12 col-md-2">
+            <a href="index.html">
+              <img src="image/logo.png" alt="" />
+            </a>
+          </div>
+          <nav class="nav_menu col-12 col-sm-12 col-md-10">
+            <ul class="nav nav_menu_ul justify-content-end">
+              <li id="nav_item_au" class="nav-item">
+                <a class="nav-link" href="#main_news_first" target="_self"
+                  >About us&nbsp;
+                  <i id="nav_link_icon_au" class="fas fa-sort-down"></i
+                ></a>
+                <ul class="nav-item-clone">
+                  <li><a href="#mngmt">Management Team</a></li>
+                  <li><a href="#Advisors">Advisors</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pptl">Patent-pending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Platform">DaaS Platform</a>
+              </li>
+              <li id="nav_item_alcs" class="nav-item">
+                <a class="nav-link" href="#"
+                  >Application&nbsp;
+                  <i id="nav_link_icon_alcs" class="fas fa-sort-down"></i
+                ></a>
+                <ul class="nav-item-clone">
+                  <li><a href="#farming">Farming</a></li>
+                  <li><a href="#Business">Business</a></li>
+                  <li><a href="#military">Military</a></li>
+                  <li><a href="#areas">Others</a></li>
+                </ul>
+              </li>
+              <li id="nav_item_n" class="nav-item">
+                <a class="nav-link" href="#"
+                  >News&nbsp;
+                  <i id="nav_link_icon_n" class="fas fa-sort-down"></i
+                ></a>
+                <ul class="nav-item-clone">
+                  <li>
+                    <a href="#Global">Global Market News</a>
+                  </li>
+                  <li>
+                    <a href="#Release">Press Release and Company News</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ftft">Contact us</a>
+              </li>
+            </ul>
+            <div class="nav_dbtn_header">
+              <button id="nav_btn_header" class="nav_btn_header">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="video_banner">
+        <video autoplay muted loop id="video_banner">
+          <source src="video/splash_v3.webm" type="video/mp4" />
+        </video>
+
+        <div class="content_banner">
+          <div class="container">
+            <h2>BUILD AND DEPLOY YOUR ADVANCED TECHNOLOGY SOLUTION TODAY</h2>
+            <p>
+              Your Drone-as-a Service (DaaS) Platform today integrating
+              BlockChain, AI, loT, Big Data Analytics, and VR/AR
+            </p>
+            <button id="btn_banner" onclick="videobanner()">Pause</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="container">
+        <div id="main_news_first" class="main_news">
+          <h2>About Us</h2>
+          <hr />
+          <p>
+            With a team of well-rounded, experienced, and proven professionals,
+            UZip<sup>TM</sup> is positioned well to disrupt the drone business
+            landscape through innovations and solution integrations with
+            Blockchain, Artificial Intelligence (AI), Machine Learning (ML),
+            IoT, and Virtual Reality/ Augmented Reality (AR/VR).
+          </p>
+
+          <p>
+            We help organizations that recognize the importance and potential of
+            Drone solutions and applications, but struggle to find skilled
+            engineers to implement and maintain. Our teams will help you
+            strategize and identify the right opportunity, create affordable
+            Drone solutions, and make your company Drone-enabled instantly using
+            our Drone-as-a-Service (DaaS<sup>TM</sup> ) platform.
+          </p>
+        </div>
+        <div id="pptl" class="main_news">
+          <h2>Patent-pending Technologies</h2>
+          <hr />
+          <p>
+            A wide-range of patent-pending technologies are used to provide
+            novel and ease-to-use Drone solutions at an optimum
+            total-cost-of-ownerhip (TCO) for each apllication areas. They range
+            from our hybrid aerospace architecture and design of the actual
+            Drone itself to our unique RTK design for GPS spatial accuracy. They
+            also include technologies using Blockchain to facilitate the
+            exchange of goods/services of all member participants on the
+            platform and using our UZip<sup>TM</sup> Privacy Lock (UPL) to
+            protect and secure the necessary information satisfying the current
+            and future Privacy Acts in US. Europe, and soon to be in Asia.
+          </p>
+
+          <p>
+            Furthermore, our firmware can be audited and provides an additional
+            security layer to satisfy requirements of some countries that do not
+            want security backdoors. These backdoor firmware codes potentially
+            exist in some widely available drones in the current global market.
+            More info on these patented pending technologies can be dislosed
+            under NDA. Please contact us.
+          </p>
+        </div>
+        <div id="Platform" class="main_news">
+          <h2>DaaS <sup>TM</sup> Platform</h2>
+          <hr />
+          <p>
+            The Drone Uniform Integrated Services (DUIS<sup>TM</sup> ) Platform
+            is a key component that is built on top of the Blockchain Crypto
+            Coin (BCC) main platform. DUIS<sup>TM</sup> provides a number of
+            interconnected services (both commercial and non-commercial), which
+            are necessary for mass application of drones in urban environment,
+            farming environment and other places that may be unsecured and/or
+            unsafe for drones to fly from the point of view of flight precision
+            and safety. DUIS<sup>TM</sup> takes all the advantages of all
+            existing key infrastructure features (coins, KYC, digital wallets,
+            etc.) from the BCC main platform.
+          </p>
+
+          <p>
+            This DUIS<sub>TM</sub> provides the new design and implementation of
+            drones services and uses the Drone-as-a-Service (DaaS<sub>TM</sub> )
+            ideology business model for the ever-expanding global uses of
+            drones. It acts as an economic bonding medium (aka marketplace)
+            among all related parties: drone owners, end-users who have a need
+            to use drones services, and third parties who manufacture drones
+            and/or develop drones applications and services. DUIS<sup>TM</sup>
+            is applicative for:
+          </p>
+          <p class="news_clone">- Drone owners and developers;</p>
+          <p class="news_clone">
+            - People and organizations who are interested in the use of drones
+            for an ever-expanding range of tasks;
+          </p>
+          <p class="news_clone">
+            - Organizations that operate drones and develop new system solutions
+            based on the drones deployed in the market;
+          </p>
+          <p>
+            More info on this patented pending DUIS<sup>TM</sup> and BCC
+            platforms can be dislosed under NDA. Please contact us.
+          </p>
+        </div>
+      </div>
+      <section id="farming" class="main_fields">
         <div class="container">
-          <h2>BUILD AND DEPLOY YOUR ADVANCED TECHNOLOGY SOLUTION TODAY</h2>
-          <p>
-            Your Drone-as-a Service (DaaS) Platform today integrating
-            BlockChain, AI, loT, Big Data Analytics, and VR/AR
-          </p>
-          <button id="btn_banner" onclick="videobanner()">Pause</button>
+          <div class="main_news">
+            <h2>Drone use in farming and agriculture</h2>
+            <hr />
+            <h3>The 3-minutes Pitch:</h3>
+            <p>
+              With millions of acres of farmlands across the world in need of
+              applying fertilizers and pesticides, our patent-pending
+              Drone-as-a-Service (DaaS<sub>TM</sub> ) solution addresses many
+              shortcomings of current drones in the market. Our drone offers
+              higher payload, longer flight time, intuitive pilot control with
+              high-precision and at a much lower cost. Our on-the-ground data in
+              Vietnam has shown that with an average charged fee of $10 per
+              hectare of farmlands (or $4.5 per acre), our patent-pending
+              Drone-as-a-Service (DaaS<sup>TM</sup> ) solution can provide to
+              farmers certain cost savings along with many tangibles and
+              intangible benefits. Beside the delivery speed of 40 times better
+              than traditional delivery methods, our DaaS<sub>TM</sub> solution
+              uses 90% less water, 30% less pesticides, and saves 28 labor units
+              per hectare of farmlands from chemical exposures. Through our
+              local partnerships and community in our DaaS<sup>TM</sup>
+              platform, our solution helps millions of small farmers to
+              efficiently grow better for our social benefits and to effectively
+              feed our ever-hungry growing world. Furthermore.our
+              state-of-the-art DaaS<sup>TM</sup> platform provides the needed
+              traceability features of our food supply chain to enhance the food
+              consumption safety choices and the consumer trust to small
+              farmers. In general, these types of trust is a survival barrier of
+              many small farmers and is currently provided through the brands of
+              many large supermarket chains at huge extra costs to both farmers
+              and consumers.
+            </p>
+            <h3>Long Pitch (500 characters including space):</h3>
+            <p>
+              Our patent-pending Drone-as-a-Service solution addresses many
+              shortcomings of current drones in the market. Our drone offers
+              higher payload, longer flight time, intuitive pilot control and at
+              a much lower cost. With millions of acres of farmlands in South
+              East Asia in need of applying fertilizers and pesticides, our
+              $10/acre solution can provide 90% less water, 30% less pesticides,
+              and save 28 labor units from chemical exposure. We locally help
+              small farmers to grow better for social benefits.
+            </p>
+            <h3>Elevator Pitch (140 characters including space):</h3>
+            <p>
+              Using our patent-pending Drone-as-a-Service, millions of small
+              farmers can grow better for social benefits and feed our
+              ever-hungry world.
+            </p>
+          </div>
+          <div class="row">
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img
+                    src="image/993dad9606effdb1a4fe.jpg"
+                    alt="Spraying & Protection"
+                /></a>
+                <h5>Spraying & Protection</h5>
+                <p>
+                  UZip<sup>TM</sup> Agriculture spraying drone can replace the
+                  traditional pesticide sprayer and it's speed is 40 times of
+                  the traditional sprayer. It will save 90% water and 30% - 40%
+                  pesticide.
+                </p>
+              </div>
+            </div>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img
+                    src="image/b25bce3f66469d18c457.jpg"
+                    alt="Spraying & Protection"
+                /></a>
+                <h5>Fertility & Sowing</h5>
+                <p>
+                  UZip<sup>TM</sup> fertilization and sowing copter is a new
+                  designed machine by UZip<sup>TM</sup> ,with the features of
+                  easy operation,even fertilization,wide range working,high
+                  eﬀective,stable properties,reliability.
+                </p>
+              </div>
+            </div>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/fsl.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Farm Surveillance</h5>
+                <p>
+                  Weeds and pests outbreak, exposed irrigation and fertilizer
+                  shortage can be monitored by UZip<sup>TM</sup> UAV equipped
+                  with high resolution multispectral or hyperspectral camera.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <main class="container-fluid">
-    <div class="container">
-      <div id="main_news_first" class="main_news">
-        <h2>About Us</h2>
-        <hr>
-        <p>
-          With a team of well-rounded, experienced, and proven professionals,
-          UZip<sup>TM</sup> is positioned well to disrupt the drone business
-          landscape through innovations and solution integrations with
-          Blockchain, Artificial Intelligence (AI), Machine Learning (ML),
-          IoT, and Virtual Reality/ Augmented Reality (AR/VR).
-        </p>
+      </section>
+      <section id="Business" class="main_fields">
+        <div class="container">
+          <div class="main_news main_news_duib">
+            <h2>Drone use in Business</h2>
+            <hr />
+          </div>
+          <div class="row">
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/bi.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Building Inspections</h5>
+                <p>
+                  A drone can perform a close-up survey of the exterior of a
+                  building and deliver high-resolution video of the roof,
+                  gutters, chimneys, and building envelope, enabling a building
+                  owner to detect trouble spots in advance
+                </p>
+              </div>
+            </div>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/del.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Delivery</h5>
+                <p>
+                  Drones are an effective solution to replace traditional ways
+                  of shipping, the areas of transportation that can be applied
+                  to replace people are: Medicine Delivery, Food Delivery,
+                  Postal Delivery, Grocery Delivery
+                </p>
+              </div>
+            </div>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/ss.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Security Surveillance</h5>
+                <p>
+                  Drones can also assist in detecting other threats to property
+                  such as fire and water leaks. Live video feeds from drones can
+                  be sent to a home or business owner's mobile device, to a
+                  central monitoring facility, or directly to emergency
+                  responders.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p>
-          We help organizations that recognize the importance and potential of
-          Drone solutions and applications, but struggle to find skilled
-          engineers to implement and maintain. Our teams will help you
-          strategize and identify the right opportunity, create affordable
-          Drone solutions, and make your company Drone-enabled instantly using
-          our Drone-as-a-Service (DaaS<sup>TM</sup> ) platform.
-        </p>
-      </div>
-      <div id="pptl" class="main_news">
-        <h2>Patent-pending Technologies</h2>
-        <hr>
-        <p>
-          A wide-range of patent-pending technologies are used to provide
-          novel and ease-to-use Drone solutions at an optimum
-          total-cost-of-ownerhip (TCO) for each apllication areas. They range
-          from our hybrid aerospace architecture and design of the actual
-          Drone itself to our unique RTK design for GPS spatial accuracy. They
-          also include technologies using Blockchain to facilitate the
-          exchange of goods/services of all member participants on the
-          platform and using our UZip<sup>TM</sup> Privacy Lock (UPL) to
-          protect and secure the necessary information satisfying the current
-          and future Privacy Acts in US. Europe, and soon to be in Asia.
-        </p>
-
-        <p>
-          Furthermore, our firmware can be audited and provides an additional
-          security layer to satisfy requirements of some countries that do not
-          want security backdoors. These backdoor firmware codes potentially
-          exist in some widely available drones in the current global market.
-          More info on these patented pending technologies can be dislosed
-          under NDA. Please contact us.
-        </p>
-      </div>
-      <div id="Platform" class="main_news">
-        <h2>DaaS <sup>TM</sup> Platform</h2>
-        <hr>
-        <p>
-          The Drone Uniform Integrated Services (DUIS<sup>TM</sup> ) Platform
-          is a key component that is built on top of the Blockchain Crypto
-          Coin (BCC) main platform. DUIS<sup>TM</sup> provides a number of
-          interconnected services (both commercial and non-commercial), which
-          are necessary for mass application of drones in urban environment,
-          farming environment and other places that may be unsecured and/or
-          unsafe for drones to fly from the point of view of flight precision
-          and safety. DUIS<sup>TM</sup> takes all the advantages of all
-          existing key infrastructure features (coins, KYC, digital wallets,
-          etc.) from the BCC main platform.
-        </p>
-
-        <p>
-          This DUIS<sub>TM</sub> provides the new design and implementation of
-          drones services and uses the Drone-as-a-Service (DaaS<sub>TM</sub> )
-          ideology business model for the ever-expanding global uses of
-          drones. It acts as an economic bonding medium (aka marketplace)
-          among all related parties: drone owners, end-users who have a need
-          to use drones services, and third parties who manufacture drones
-          and/or develop drones applications and services. DUIS<sup>TM</sup>
-          is applicative for:
-        </p>
-        <p class="news_clone">- Drone owners and developers;</p>
-        <p class="news_clone">
-          - People and organizations who are interested in the use of drones
-          for an ever-expanding range of tasks;
-        </p>
-        <p class="news_clone">
-          - Organizations that operate drones and develop new system solutions
-          based on the drones deployed in the market;
-        </p>
-        <p>
-          More info on this patented pending DUIS<sup>TM</sup> and BCC
-          platforms can be dislosed under NDA. Please contact us.
-        </p>
-      </div>
-    </div>
-    <section id="farming" class="main_fields">
-      <div class="container">
-        <div class="main_news">
-          <h2>Drone use in farming and agriculture</h2>
-          <hr>
-          <h3>The 3-minutes Pitch:</h3>
-          <p>
-            With millions of acres of farmlands across the world in need of
-            applying fertilizers and pesticides, our patent-pending
-            Drone-as-a-Service (DaaS<sub>TM</sub> ) solution addresses many
-            shortcomings of current drones in the market. Our drone offers
-            higher payload, longer flight time, intuitive pilot control with
-            high-precision and at a much lower cost. Our on-the-ground data in
-            Vietnam has shown that with an average charged fee of $10 per
-            hectare of farmlands (or $4.5 per acre), our patent-pending
-            Drone-as-a-Service (DaaS<sup>TM</sup> ) solution can provide to
-            farmers certain cost savings along with many tangibles and
-            intangible benefits. Beside the delivery speed of 40 times better
-            than traditional delivery methods, our DaaS<sub>TM</sub> solution
-            uses 90% less water, 30% less pesticides, and saves 28 labor units
-            per hectare of farmlands from chemical exposures. Through our
-            local partnerships and community in our DaaS<sup>TM</sup>
-            platform, our solution helps millions of small farmers to
-            efficiently grow better for our social benefits and to effectively
-            feed our ever-hungry growing world. Furthermore.our
-            state-of-the-art DaaS<sup>TM</sup> platform provides the needed
-            traceability features of our food supply chain to enhance the food
-            consumption safety choices and the consumer trust to small
-            farmers. In general, these types of trust is a survival barrier of
-            many small farmers and is currently provided through the brands of
-            many large supermarket chains at huge extra costs to both farmers
-            and consumers.
-          </p>
-          <h3>Long Pitch (500 characters including space):</h3>
-          <p>
-            Our patent-pending Drone-as-a-Service solution addresses many
-            shortcomings of current drones in the market. Our drone offers
-            higher payload, longer flight time, intuitive pilot control and at
-            a much lower cost. With millions of acres of farmlands in South
-            East Asia in need of applying fertilizers and pesticides, our
-            $10/acre solution can provide 90% less water, 30% less pesticides,
-            and save 28 labor units from chemical exposure. We locally help
-            small farmers to grow better for social benefits.
-          </p>
-          <h3>Elevator Pitch (140 characters including space):</h3>
-          <p>
-            Using our patent-pending Drone-as-a-Service, millions of small
-            farmers can grow better for social benefits and feed our
-            ever-hungry world.
-          </p>
-        </div>
-        <div class="row">
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/993dad9606effdb1a4fe.jpg" alt="Spraying & Protection" /></a>
-              <h5>Spraying & Protection</h5>
-              <p>
-                UZip<sup>TM</sup> Agriculture spraying drone can replace the
-                traditional pesticide sprayer and it's speed is 40 times of
-                the traditional sprayer. It will save 90% water and 30% - 40%
-                pesticide.
-              </p>
-            </div>
+      <section id="military" class="main_fields">
+        <div class="container">
+          <div class="main_news main_news_duib">
+            <h2>Drone use in military</h2>
+            <hr />
           </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/b25bce3f66469d18c457.jpg" alt="Spraying & Protection" /></a>
-              <h5>Fertility & Sowing</h5>
-              <p>
-                UZip<sup>TM</sup> fertilization and sowing copter is a new
-                designed machine by UZip<sup>TM</sup> ,with the features of
-                easy operation,even fertilization,wide range working,high
-                eﬀective,stable properties,reliability.
-              </p>
+          <div class="row">
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/rec.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Reconnaissance</h5>
+                <p>
+                  The drone is an effective reconnaissance device, especially
+                  useful against urban terrorism and assisting guerrilla
+                  warfare, helping to increase the survivability of soldiers.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/fsl.jpg" alt="Spraying & Protection" /></a>
-              <h5>Farm Surveillance</h5>
-              <p>
-                Weeds and pests outbreak, exposed irrigation and fertilizer
-                shortage can be monitored by UZip<sup>TM</sup> UAV equipped
-                with high resolution multispectral or hyperspectral camera.
-              </p>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/bm.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Border monitoring</h5>
+                <p>
+                  The drone is 200 times more effective at monitoring the border
+                  than the patrol, and it can also help track and assist in the
+                  pursuit of illegal border crossings, smuggling, etc.
+                </p>
+              </div>
+            </div>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/sm.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Suicide missions</h5>
+                <p>
+                  Cheap price, high precision, and weight at just enough, Drone
+                  is an effective solution to perform suicide missions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="Business" class="main_fields">
-      <div class="container">
-        <div class="main_news main_news_duib">
-          <h2>Drone use in Business</h2>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/bi.jpg" alt="Spraying & Protection" /></a>
-              <h5>Building Inspections</h5>
-              <p>
-                A drone can perform a close-up survey of the exterior of a
-                building and deliver high-resolution video of the roof,
-                gutters, chimneys, and building envelope, enabling a building
-                owner to detect trouble spots in advance
-              </p>
-            </div>
+      </section>
+      <section id="areas" class="main_fields">
+        <div class="container">
+          <div class="main_news main_news_duib">
+            <h2>Drone use in other areas</h2>
+            <hr />
           </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/del.jpg" alt="Spraying & Protection" /></a>
-              <h5>Delivery</h5>
-              <p>
-                Drones are an effective solution to replace traditional ways
-                of shipping, the areas of transportation that can be applied
-                to replace people are: Medicine Delivery, Food Delivery,
-                Postal Delivery, Grocery Delivery
-              </p>
+          <div class="row">
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/mas.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Mapping and Surveying</h5>
+                <p>
+                  Using base station reference data and GPS, specially equipped
+                  drones can gather three-dimensional cartographic information
+                  with an accuracy of within 1 to 2 centimeters after
+                  processing. Cartographic surveys are used in many industries
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/ss.jpg" alt="Spraying & Protection" /></a>
-              <h5>Security Surveillance</h5>
-              <p>
-                Drones can also assist in detecting other threats to property
-                such as fire and water leaks. Live video feeds from drones can
-                be sent to a home or business owner's mobile device, to a
-                central monitoring facility, or directly to emergency
-                responders.
-              </p>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img src="image/sar.jpg" alt="Spraying & Protection"
+                /></a>
+                <h5>Search and Rescue</h5>
+                <p>
+                  Drones are becoming an indispensable tool in the arsenal of
+                  search-and-rescue organizations. Aside from the greatly
+                  reduced cost of using drones instead of helicopters for aerial
+                  searches, drones are able to fly at night and reach areas
+                  where helicopters are unable to travel.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="military" class="main_fields">
-      <div class="container">
-        <div class="main_news main_news_duib">
-          <h2>Drone use in military</h2>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/rec.jpg" alt="Spraying & Protection" /></a>
-              <h5>Reconnaissance</h5>
-              <p>
-                The drone is an effective reconnaissance device, especially
-                useful against urban terrorism and assisting guerrilla
-                warfare, helping to increase the survivability of soldiers.
-              </p>
-            </div>
-          </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/bm.jpg" alt="Spraying & Protection" /></a>
-              <h5>Border monitoring</h5>
-              <p>
-                The drone is 200 times more effective at monitoring the border
-                than the patrol, and it can also help track and assist in the
-                pursuit of illegal border crossings, smuggling, etc.
-              </p>
-            </div>
-          </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/sm.jpg" alt="Spraying & Protection" /></a>
-              <h5>Suicide missions</h5>
-              <p>
-                Cheap price, high precision, and weight at just enough, Drone
-                is an effective solution to perform suicide missions.
-              </p>
+            <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
+              <div>
+                <a href="index.html"
+                  ><img
+                    src="image/5029ea5b4222b97ce033.jpg"
+                    alt="Spraying & Protection"
+                /></a>
+                <h5>Wildfires tracking</h5>
+                <p>
+                  Drones are revolutionizing the way scientists observe, measure
+                  and monitor the natural environment. From mapping the patterns
+                  of wildfires, like those in California, to measuring the size
+                  of jellyfish populations, drones have the potential to improve
+                  our understanding of the natural environment.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="areas" class="main_fields">
-      <div class="container">
-        <div class="main_news main_news_duib">
-          <h2>Drone use in other areas</h2>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/mas.jpg" alt="Spraying & Protection" /></a>
-              <h5>Mapping and Surveying</h5>
-              <p>
-                Using base station reference data and GPS, specially equipped
-                drones can gather three-dimensional cartographic information
-                with an accuracy of within 1 to 2 centimeters after
-                processing. Cartographic surveys are used in many industries
+      </section>
+      <section id="mngmt" class="">
+        <div class="container">
+          <div class="main_news main_news_duib">
+            <h2>Management team</h2>
+            <hr />
+          </div>
+          <div class="row show_profile_mngm_o">
+            <div class="col-4 col-sm-4 col-md-3">
+              <div class="row">
+                <div class="col-1 col-sm-1 col-md-1"></div>
+                <div class="show_profile_mngm_img_o col-10 col-sm-10 col-md-10">
+                  <img id="image_mngm" src="image/ln.jpg" alt="" />
+                </div>
+                <div class="col-1 col-sm-1 col-md-1"></div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-9">
+              <p class="text_profile_0">
+                <span id="name_mngm" class="text_profile_0_name"
+                  >Prof. Luan Nguyen</span
+                >
+                <br />
+                <em id="posc_mngm">PhD, ECE, Exec MBA</em><br />
+                <em id="pos_mngm">CEO/President</em> <br />
+                <br />
+                <span id="ind_mngm"
+                  >35+ years of managerial and technology experiences. 16 years
+                  with IBM. 1997-2000 IBM CTO IBM Global Services. Manage
+                  successfully many tech companies in US and SE Asia.</span
+                >
               </p>
             </div>
           </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/sar.jpg" alt="Spraying & Protection" /></a>
-              <h5>Search and Rescue</h5>
-              <p>
-                Drones are becoming an indispensable tool in the arsenal of
-                search-and-rescue organizations. Aside from the greatly
-                reduced cost of using drones instead of helicopters for aerial
-                searches, drones are able to fly at night and reach areas
-                where helicopters are unable to travel.
-              </p>
-            </div>
-          </div>
-          <div class="main_firlds_clone col-12 col-sm-12 col-md-4">
-            <div>
-              <a href="index.html"><img src="image/5029ea5b4222b97ce033.jpg" alt="Spraying & Protection" /></a>
-              <h5>Wildfires tracking</h5>
-              <p>
-                Drones are revolutionizing the way scientists observe, measure
-                and monitor the natural environment. From mapping the patterns
-                of wildfires, like those in California, to measuring the size
-                of jellyfish populations, drones have the potential to improve
-                our understanding of the natural environment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="mngmt" class="">
-      <div class="container">
-        <div class="main_news main_news_duib">
-          <h2>Management team</h2>
-          <hr>
-        </div>
-        <div class="row show_profile_mngm_o">
-          <div class="col-4 col-sm-4 col-md-3">
-            <div class="row">
-              <div class="col-1 col-sm-1 col-md-1"></div>
-              <div class="show_profile_mngm_img_o col-10 col-sm-10 col-md-10">
+          <div class="row all_mngm">
+            <div id="ln_mngm" class="col-12 col-sm-12 col-md-3">
+              <div>
                 <img src="image/ln.jpg" alt="" />
               </div>
-              <div class="col-1 col-sm-1 col-md-1"></div>
+              <div>
+                <h5>Prof. Luan Nguyen</h5>
+                <em>PhD, ECE, Exec MBA</em><br />
+                <em>CEO/President</em>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-9">
-
-            <p class="text_profile_0">
-              <span class="text_profile_0_name">Prof. Luan Nguyen</span> <br>
-              <em>PhD, ECE, Exec MBA</em><br />
-              <em>CEO/President</em> <br> <br>
-              <span>35+ years of managerial
-                and technology experiences.
-                16 years with IBM.
-                1997-2000 IBM CTO
-                IBM Global Services.
-                Manage successfully
-                many tech companies
-                in US and SE Asia.</span>
-
-            </p>
-          </div>
-        </div>
-        <div class="row all_mngm">
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/ln.jpg" alt="" />
+            <div id="a_vu" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/A_Vu.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Prof. Anh Vu</h5>
+                <em>PhD Aerospace Eng.</em><br />
+                <em>Chief Scientist</em>
+              </div>
             </div>
-            <div>
-              <h5>Prof. Luan Nguyen</h5>
-              <em>PhD, ECE, Exec MBA</em><br />
-              <em>CEO/President</em>
+            <div id="tn_mngm" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/tn.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Mr. Toan Nguyen</h5>
+                <em>BS Info Technology Eng.</em><br />
+                <em>Chief Technical Officer</em>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/A_Vu.jpg" alt="" />
+            <div id="ch_mngm" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/ch.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Ms. Chi Hoang</h5>
+                <em>BS Business Finance</em><br />
+                <em>Chief Financial Officer</em>
+              </div>
             </div>
-            <div>
-              <h5>Prof. Anh Vu</h5>
-              <em>PhD Aerospace Eng.</em><br />
-              <em>Chief Scientist</em>
+            <div id="ld_mngm" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/ld.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Mr. Liem Doan</h5>
+                <em>BS Electrical Eng.</em><br />
+                <em>Chief Marketing Officer</em>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/tn.jpg" alt="" />
+            <div id="td_mngm" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/td.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Mr. Trai Dang</h5>
+                <em>MBA</em><br />
+                <em>VP of Business Development</em>
+              </div>
             </div>
-            <div>
-              <h5>Mr. Toan Nguyen</h5>
-              <em>BS Info Technology Eng.</em><br />
-              <em>Chief Technical Officer</em>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/ch.jpg" alt="" />
-            </div>
-            <div>
-              <h5>Ms. Chi Hoang</h5>
-              <em>BS Business Finance</em><br />
-              <em>Chief Financial Officer</em>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/ld.jpg" alt="" />
-            </div>
-            <div>
-              <h5>Mr. Liem Doan</h5>
-              <em>BS Electrical Eng.</em><br />
-              <em>Chief Marketing Officer</em>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/td.jpg" alt="" />
-            </div>
-            <div>
-              <h5>Mr. Trai Dang</h5>
-              <em>MBA</em><br />
-              <em>VP of Business Development</em>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/vt.jpg" alt="" />
-            </div>
-            <div>
-              <h5>Mr. Viet Tran</h5>
-              <em>BS E&T Eng.</em><br />
-              <em>Branch Manager, DN Office</em>
+            <div id="vt_mngm" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/vt.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Mr. Viet Tran</h5>
+                <em>BS E&T Eng.</em><br />
+                <em>Branch Manager, DN Office</em>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="Advisors" class="">
-      <div class="container">
-        <div class="main_news main_news_duib">
-          <h2>Advisors</h2>
-          <hr>
-        </div>
-        <div class="row show_profile_mngm">
-          <div class="col-12 col-sm-12 col-md-3">
-            <div class="row">
-              <div class="col-1 col-sm-1 col-md-1"></div>
-              <div class="show_profile_mngm_img col-10 col-sm-10 col-md-10">
+      <section id="Advisors" class="">
+        <div class="container">
+          <div class="main_news main_news_duib">
+            <h2>Advisors</h2>
+            <hr />
+          </div>
+          <div class="row show_profile_mngm">
+            <div class="col-12 col-sm-12 col-md-3">
+              <div class="row">
+                <div class="col-1 col-sm-1 col-md-1"></div>
+                <div class="show_profile_mngm_img col-10 col-sm-10 col-md-10">
+                  <img id="image_adv" src="image/hrn.jpg" alt="" />
+                </div>
+                <div class="col-1 col-sm-1 col-md-1"></div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-9">
+              <p class="text_profile">
+                <span id="name_adv" class="text_profile_0_name">Prof. Henry Nguyen, PhD </span
+                ><br />
+                <br />
+                <span id="ind_adv">
+                  Prof. Henry Nguyen is the Vice President of the Global Plant
+                  Council organization. He secured over 49 million USD research
+                  fund from federal agencies (USDA, NSF, NIH) and billion-dollar
+                  industry leaders (Syngenta, Rockefeller, McKnight). He is a
+                  Curators' distinguished professor of genetics and earned a
+                  Ph.D. in plant breeding and genetics from the University of
+                  Missouri, USA. He has served as director of the U.S. National
+                  Center for Soybean Biotechnology. He has published more than
+                  260 articles and has contributed 35 book chapters.
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="row all_mngm">
+            <div id="hrn_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
                 <img src="image/hrn.jpg" alt="" />
               </div>
-              <div class="col-1 col-sm-1 col-md-1"></div>
+              <div>
+                <h5>Prof. Henry Nguyen, PhD</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-9">
-            <p class="text_profile">
-              <span class="text_profile_0_name">Prof. Henry Nguyen, PhD
-              </span><br> <br>
-              <span>
-                Prof. Henry Nguyen is the Vice President of the Global Plant Council organization. He secured over 49
-                million USD research fund from federal agencies (USDA, NSF, NIH) and billion-dollar industry leaders
-                (Syngenta, Rockefeller, McKnight). He is a Curators' distinguished professor of genetics and earned a
-                Ph.D. in plant breeding and genetics from the University of Missouri, USA. He has served as director
-                of the U.S. National Center for Soybean Biotechnology. He has published more than 260 articles and has
-                contributed 35 book chapters.
-
-              </span>
-
-            </p>
-          </div>
-        </div>
-        <div class="row all_mngm">
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/hrn.jpg" alt="" />
+            <div id="nw_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/nw.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Nathan Williams</h5>
+              </div>
             </div>
-            <div>
-              <h5>Prof. Luan Nguyen</h5>
+            <div id="jt_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/jt.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Jeff Tang</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/nw.jpg" alt="" />
+            <div id="djw_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/djw.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Dr. Joseph Wang</h5>
+              </div>
             </div>
-            <div>
-              <h5>Nathan Williams</h5>
+            <div id="rs_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/rs.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Richard Seow</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/jt.jpg" alt="" />
+            <div id="jsb_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/jsb.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Prof. John Sibley Butler, PhD</h5>
+              </div>
             </div>
-            <div>
-              <h5>Jeff Tang</h5>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/djw.jpg" alt="" />
-            </div>
-            <div>
-              <h5>Dr Joseph Wang</h5>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/rs.jpg" alt="" />
-            </div>
-            <div>
-              <h5>Richard Seow</h5>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/jsb.jpg" alt="" />
-            </div>
-            <div>
-              <h5>John Sibley Butler</h5>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3">
-            <div>
-              <img src="image/stdr.jpg" alt="" />
-            </div>
-            <div>
-              <h5>SatyendraRana</h5>
+            <div id="stdr_adv" class="col-12 col-sm-12 col-md-3">
+              <div>
+                <img src="image/stdr.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Prof. Satyendra Rana, PhD</h5>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <footer class="container-fluid footer">
+      <div id="Global" class="container">
+        <section class="ft_news">
+          <div class="row">
+            <h2 class="ft_news_tt">Global Market News</h2>
+            <hr />
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a href="https://dronelife.com/">
+                <img src="image/pxfuel300x200.jpg" alt="" />
+              </a>
+              <div class="ft_new_text">
+                <span>The Best Pairing for Wine May be a Drone</span>
+                <p>
+                  With a wide and global customer base, drone mapping platform
+                  DroneDeploy is continually identifying new uses for drone
+                  technology. Precision agriculture was one of the early
+                  adopters of drone technology: and now, more vineyards are
+                  adopting drones to make better wine.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a href="https://www.spacewar.com/uav.html">
+                <img src="image/uav-destroyed-matrix-laser-hg.jpg" alt="" />
+              </a>
+              <div class="ft_new_text">
+                <span
+                  >Navy installs ODIN laser weapon system to counter aerial
+                  drones</span
+                >
+                <p>
+                  The U.S. Navy announced Thursday that it has installed a laser
+                  weapon system that allows ships to counter aerial drones.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a href="https://www.dronedeploy.com/blog/">
+                <img
+                  src="image/d4c2e024-9746-4ac5-80c1-310e623b0a4b_TerrainAware-iPad.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="ft_new_text">
+                <span>DroneDeploy Blog</span>
+                <p>
+                  Learn from industry experts and customers in construction,
+                  energy, agriculture, and more. Get product updates and news
+                  from the DroneDeploy team.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a href="http://www.aero-news.net/">
+                <img src="image/AIRBORNE-SONEX-NTSB-030620.jpg" alt="" />
+              </a>
+              <div class="ft_new_text">
+                <span
+                  >Scottish Airshow Cancelled, Sonex v Tree, Weather
+                  Camera</span
+                >
+                <p>
+                  The Scottish International Airshow has been cancelled for 2020
+                  amidst a disagreement between the event's organizers and local
+                  officials.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="Release" class="row">
+            <h2 class="ft_news_tt">Press Release and Company News</h2>
+            <hr />
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a
+                href="https://vnexpress.net/giao-duc/pho-giao-su-che-tao-may-bay-phun-thuoc-tru-sau-4053608.html"
+              >
+                <img
+                  src="image/may-bay-phun-thuoc-sau-7842-1581419837.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="ft_new_text">
+                <span>Phó giáo sư chế tạo máy bay phun thuốc trừ sâu</span>
+                <p>
+                  TS Vũ Ngọc Ánh - giảng viên Đại học Bách khoa TP HCM, bỏ hết
+                  tiền dành dụm chế tạo máy bay phun thuốc trừ sâu tự động, giúp
+                  nông dân bớt vất vả.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a
+                href="https://video.vnexpress.net/tin-tuc/thoi-su/thay-giao-tp-hcm-che-tao-may-bay-dieu-khien-phun-thuoc-tru-sau-3706949.html"
+              >
+                <img src="image/videoaaaa.png" alt="" />
+              </a>
+              <div class="ft_new_text">
+                <span
+                  >Thầy giáo TP HCM chế tạo máy bay điều khiển phun thuốc trừ
+                  sâu</span
+                >
+                <p>
+                  Sau nhiều năm nguyên cứu, thầy Vũ Ngọc Ánh (ĐH Bách Khoa TP
+                  HCM) đã chế tạo thành công máy bay phun thuốc trừ sâu.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a
+                href="https://dantri.com.vn/giao-duc-khuyen-hoc/pho-giao-su-37-tuoi-che-tao-may-bay-danh-cho-nha-nong-20200126133650407.htm"
+              >
+                <img src="image/tit-1580013624858.jpg" alt="" />
+              </a>
+              <div class="ft_new_text">
+                <span
+                  >Phó giáo sư 37 tuổi chế tạo máy bay dành cho nhà nông</span
+                >
+                <p>
+                  Một tuần trước Tết Canh Tý 2020, phóng viên Dân trí ghé tìm
+                  gặp anh Vũ Ngọc Ánh ở Bộ môn Kỹ thuật Hàng không của Trường ĐH
+                  Bách khoa TPHCM vẫn thấy anh miệt mài làm việc, trao đổi với
+                  đối tác nước ngoài cho nhiều dự án của mình.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+              <a
+                href="https://www.facebook.com/847372608751026/videos/485327812136341/?v=485327812136341"
+              >
+                <img src="image/fbaaa.png" alt="" />
+              </a>
+              <div class="ft_new_text">
+                <span>MÁY BAY PHUN THUỐC TRỪ SÂU “MADE IN VIETNAM”</span>
+                <p>
+                  Phó giáo sư - Tiến sỹ Vũ Ngọc Ánh cùng các cộng sự của mình
+                  tại trường ĐH Bách Khoa TP.HCM đã nghiên cứu ra mô hình máy
+                  bay phun thuốc trừ sâu giá thành bằng 1/3 thị trường. Qua 3
+                  năm nghiên cứu, nhóm nghiên cứu đã hoàn thiện phiên bản thứ 2
+                  và tiếp tục nghiên cứu dòng máy bay phun thuốc trừ sâu phiên
+                  bản thứ 3. Ẩn bớt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ft_contact">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 ft_inf">
+              <img src="image/logo-nbg.png" alt="" />
+              <p>
+                The tightly and seamless intergration of advanced technologies,
+                processes anf people on our UZip platform help to bring products
+                closer to consumers, increasing the flexibility and adaptability
+                of the overall distribution network
+              </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 ft_sayhelo">
+              <h2>Say hello</h2>
+              <form action="##">
+                <input
+                  class="ipt"
+                  type="text"
+                  placeholder="Name"
+                  name="username"
+                />
+                <input
+                  class="ipt"
+                  type="text"
+                  placeholder="Email"
+                  name="email"
+                />
+                <textarea
+                  name="mess"
+                  id="mess"
+                  cols="45"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+                <input class="sub" type="submit" value="Submit" />
+              </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 ft_cont">
+              <h2>Contact Information</h2>
+              <em
+                ><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp; +1
+                -048 - 780 - 8875</em
+              ><br />
+              <em
+                ><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                info@uzip.online</em
+              ><br />
+              <p>
+                <i class="fas fa-map-marker-alt"></i
+                ><em>
+                  US Address: 15905 Cornerwood Court, Austin, Texas 78717,
+                  USA</em
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="ftft" class="ft_ft">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-7 ft_btm">
+              <a href="privacy.html" target="_blank" rel="noopener noreferrer"
+                >Privacy</a
+              >
+              <a
+                href="terms_of_use.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Terms of use</a
+              >
+              <a
+                href="accessibility.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Accessibility</a
+              >
+              <a
+                href="cookie_preferences.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Cookie preferences</a
+              >
+            </div>
+            <div class="col-12 col-sm-12 col-md-2"></div>
+            <div class="col-12 col-sm-12 col-md-3 ft_btm_icon">
+              <button>
+                <a
+                  href="https://www.youtube.com/channel/UCNYFXal7ViqPA7G-gYwIvkQ/"
+                  ><i
+                    class="ft_btm_icon_c ft_btm_icon_c_tt fab fa-twitter-square"
+                  ></i
+                ></a>
+              </button>
+              <button>
+                <i class="ft_btm_icon_c ft_btm_icon_c_yt fab fa-youtube"></i>
+              </button>
+              <button>
+                <a
+                  href="https://www.facebook.com/JWCLab/?eid=ARBw6hX88mhvyE-pq9cE7xzH-khh7bMPVjnqcAZ9vL-PZzvoGNzIY6CVaugeY4PGxGoZ6ZnJyOIoTa88"
+                  ><i
+                    class="ft_btm_icon_c ft_btm_icon_c_fb fab fa-facebook-square"
+                  ></i
+                ></a>
+              </button>
+              <button>
+                <i class="ft_btm_icon_c ft_btm_icon_c_ig fab fa-instagram"></i>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-  </main>
-  <footer class="container-fluid footer">
-    <div id="Global" class="container">
-      <section class="ft_news">
-        <div class="row">
-          <h2 class="ft_news_tt">Global Market News</h2>
-          <hr>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a href="https://dronelife.com/">
-              <img src="image/pxfuel300x200.jpg" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>The Best Pairing for Wine May be a Drone</span>
-              <p>
-                With a wide and global customer base, drone mapping platform
-                DroneDeploy is continually identifying new uses for drone
-                technology. Precision agriculture was one of the early
-                adopters of drone technology: and now, more vineyards are
-                adopting drones to make better wine.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a href="https://www.spacewar.com/uav.html">
-              <img src="image/uav-destroyed-matrix-laser-hg.jpg" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>Navy installs ODIN laser weapon system to counter aerial
-                drones</span>
-              <p>
-                The U.S. Navy announced Thursday that it has installed a laser
-                weapon system that allows ships to counter aerial drones.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a href="https://www.dronedeploy.com/blog/">
-              <img src="image/d4c2e024-9746-4ac5-80c1-310e623b0a4b_TerrainAware-iPad.jpg" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>DroneDeploy Blog</span>
-              <p>
-                Learn from industry experts and customers in construction,
-                energy, agriculture, and more. Get product updates and news
-                from the DroneDeploy team.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a href="http://www.aero-news.net/">
-              <img src="image/AIRBORNE-SONEX-NTSB-030620.jpg" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>Scottish Airshow Cancelled, Sonex v Tree, Weather
-                Camera</span>
-              <p>
-                The Scottish International Airshow has been cancelled for 2020
-                amidst a disagreement between the event's organizers and local
-                officials.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="Release" class="row">
-          <h2 class="ft_news_tt">Press Release and Company News</h2>
-          <hr>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a href="https://vnexpress.net/giao-duc/pho-giao-su-che-tao-may-bay-phun-thuoc-tru-sau-4053608.html">
-              <img src="image/may-bay-phun-thuoc-sau-7842-1581419837.jpg" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>Phó giáo sư chế tạo máy bay phun thuốc trừ sâu</span>
-              <p>
-                TS Vũ Ngọc Ánh - giảng viên Đại học Bách khoa TP HCM, bỏ hết
-                tiền dành dụm chế tạo máy bay phun thuốc trừ sâu tự động, giúp
-                nông dân bớt vất vả.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a
-              href="https://video.vnexpress.net/tin-tuc/thoi-su/thay-giao-tp-hcm-che-tao-may-bay-dieu-khien-phun-thuoc-tru-sau-3706949.html">
-              <img src="image/videoaaaa.png" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>Thầy giáo TP HCM chế tạo máy bay điều khiển phun thuốc trừ
-                sâu</span>
-              <p>
-                Sau nhiều năm nguyên cứu, thầy Vũ Ngọc Ánh (ĐH Bách Khoa TP
-                HCM) đã chế tạo thành công máy bay phun thuốc trừ sâu.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a
-              href="https://dantri.com.vn/giao-duc-khuyen-hoc/pho-giao-su-37-tuoi-che-tao-may-bay-danh-cho-nha-nong-20200126133650407.htm">
-              <img src="image/tit-1580013624858.jpg" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>Phó giáo sư 37 tuổi chế tạo máy bay dành cho nhà nông</span>
-              <p>
-                Một tuần trước Tết Canh Tý 2020, phóng viên Dân trí ghé tìm gặp anh Vũ Ngọc Ánh ở Bộ môn Kỹ thuật Hàng
-                không của Trường
-                ĐH Bách khoa TPHCM vẫn thấy anh miệt mài làm việc, trao đổi với đối tác nước ngoài cho nhiều dự án của
-                mình.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
-            <a href="https://www.facebook.com/847372608751026/videos/485327812136341/?v=485327812136341">
-              <img src="image/fbaaa.png" alt="" />
-            </a>
-            <div class="ft_new_text">
-              <span>MÁY BAY PHUN THUỐC TRỪ SÂU “MADE IN VIETNAM”</span>
-              <p>
-                Phó giáo sư - Tiến sỹ Vũ Ngọc Ánh cùng các cộng sự của mình tại trường ĐH Bách Khoa TP.HCM đã nghiên cứu
-                ra mô hình máy
-                bay phun thuốc trừ sâu giá thành bằng 1/3 thị trường. Qua 3 năm nghiên cứu, nhóm nghiên cứu đã hoàn
-                thiện phiên bản thứ
-                2 và tiếp tục nghiên cứu dòng máy bay phun thuốc trừ sâu phiên bản thứ 3. Ẩn bớt
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="ft_contact">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-4 ft_inf">
-            <img src="image/logo-nbg.png" alt="" />
-            <p>
-              The tightly and seamless intergration of advanced technologies,
-              processes anf people on our UZip platform help to bring products
-              closer to consumers, increasing the flexibility and adaptability
-              of the overall distribution network
-            </p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-4 ft_sayhelo">
-            <h2>Say hello</h2>
-            <form action="##">
-              <input class="ipt" type="text" placeholder="Name" name="username">
-              <input class="ipt" type="text" placeholder="Email" name="email">
-              <textarea name="mess" id="mess" cols="45" rows="5" placeholder="Message"></textarea>
-              <input class="sub" type="submit" value="Submit">
-            </form>
-          </div>
-          <div class="col-12 col-sm-12 col-md-4 ft_cont">
-            <h2>Contact Information</h2>
-            <em><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp; +1
-              -048 - 780 - 8875</em><br />
-            <em><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-              info@uzip.online</em><br />
-            <p>
-              <i class="fas fa-map-marker-alt"></i><em>
-                US Address: 15905 Cornerwood Court, Austin, Texas 78717,
-                USA</em>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="ftft" class="ft_ft">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-7 ft_btm">
-            <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
-            <a href="terms_of_use.html" target="_blank" rel="noopener noreferrer">Terms of use</a>
-            <a href="accessibility.html" target="_blank" rel="noopener noreferrer">Accessibility</a>
-            <a href="cookie_preferences.html" target="_blank" rel="noopener noreferrer">Cookie preferences</a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-2">
-          </div>
-          <div class="col-12 col-sm-12 col-md-3 ft_btm_icon">
-            <button><a href="https://www.youtube.com/channel/UCNYFXal7ViqPA7G-gYwIvkQ/"><i
-                  class="ft_btm_icon_c ft_btm_icon_c_tt fab fa-twitter-square"></i></a></button>
-            <button><i class="ft_btm_icon_c ft_btm_icon_c_yt fab fa-youtube"></i></button>
-            <button><a
-                href="https://www.facebook.com/JWCLab/?eid=ARBw6hX88mhvyE-pq9cE7xzH-khh7bMPVjnqcAZ9vL-PZzvoGNzIY6CVaugeY4PGxGoZ6ZnJyOIoTa88"><i
-                  class="ft_btm_icon_c ft_btm_icon_c_fb fab fa-facebook-square"></i></a></button>
-            <button><i class="ft_btm_icon_c ft_btm_icon_c_ig fab fa-instagram"></i></button>
-          </div>
-        </div>
-      </section>
-    </div>
-  </footer>
-  <script type="text/javascript" src="script/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-</body>
-
+    </footer>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
