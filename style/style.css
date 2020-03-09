@@ -681,6 +681,10 @@ a:hover {
   margin-top: 60px;
 }
 
+.privacy p {
+  padding-left: 15px;
+}
+
 .privacy_h1 {
   display: inline-block;
   width: 100%;
