@@ -26,12 +26,11 @@ a:hover {
 }
 
 .header_menu_main {
-  /* display: inline-block; */
   position: fixed;
   z-index: 1;
+  left: 15%;
   background-color: #fff;
   margin: 0 auto;
-  min-width: 100%;
   top: 0px;
 }
 
@@ -93,7 +92,6 @@ a:hover {
 }
 
 .nav-link {
-  font-size: 20px;
   line-height: 50px;
   padding: 0px 15px;
   color: #fff;
@@ -216,7 +214,7 @@ a:hover {
   position: relative;
   height: 700px;
   overflow: hidden;
-  top: 50px;
+  top: 52px;
 }
 
 #video_banner {
@@ -237,17 +235,22 @@ a:hover {
   padding-top: 15%;
 }
 
+.content_banner div p {
+  font-size: 18px;
+}
+
 #btn_banner {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 100px;
-  font-size: 18px;
-  padding: 10px;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  font-size: 14px;
+  padding: 5px;
   border: none;
-  background: #000;
+  background: #54ba46;
   color: #fff;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #btn_banner:hover {
@@ -270,6 +273,10 @@ a:hover {
 
 .nav_btn_header i {
   font-size: 20px;
+}
+
+.main_news {
+  padding: 20px;
 }
 
 .main_news h2 {
@@ -527,22 +534,26 @@ a:hover {
 .ft_btm_icon_c_ig {
   color: #006dc0;
 }
-.bntdwn{
+
+.bntdwn {
   width: 100%;
   text-align: center;
 }
-.bntdwn button{
+
+.bntdwn button {
   background-color: #006dc0;
   width: 150px;
   border: 0px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.bntdwn a{
+
+.bntdwn a {
   line-height: 40px;
   color: #fff;
   font-weight: 600;
 }
+
 @media only screen and (max-width: 1200px) {
   .container {
     max-width: 100%;
@@ -555,7 +566,7 @@ a:hover {
 
 @media only screen and (max-width: 1010px) {
   .nav-link {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .logo_header a img {
@@ -569,6 +580,10 @@ a:hover {
   .video_banner {
     height: 450px;
   }
+}
+
+.show_profile_mngm_img {
+  padding: 0px;
 }
 
 .main_news_duib {
@@ -625,9 +640,19 @@ a:hover {
   -o-text-transform: uppercase;
 }
 
+@media only screen and (max-width: 768px) {
+  .show_profile_mngm div img {
+    width: 150px;
+  }
+}
+
 @media only screen and (max-width: 784px) {
   .nav-link {
     font-size: 10px;
+  }
+
+  .show_profile_mngm_img img {
+    width: 150px;
   }
 
   .logo_header a img {
@@ -641,11 +666,23 @@ a:hover {
   .video_banner {
     height: 360px;
   }
+
+  .show_profile_mngm {
+    height: 540px;
+  }
+
+  .show_profile_mngm_img {
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 635px) {
   .nav_menu_ul {
     display: none;
+  }
+
+  .logo_header {
+    text-align: center;
   }
 
   .nav_btn_header {
@@ -672,5 +709,9 @@ a:hover {
 
   .nav-link {
     line-height: 30px;
+  }
+
+  .show_profile_mngm_img {
+    padding: 0px;
   }
 }
