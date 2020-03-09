@@ -681,6 +681,10 @@ a:hover {
     display: none;
   }
 
+  .header_menu_main {
+    left: 0;
+  }
+
   .logo_header {
     text-align: center;
   }
