@@ -73,3 +73,14 @@ $('#nav_item_n_mb').click(function () {
   }
 
 });
+
+$('#nav_btn_header').click(function(){
+  $('#sidebar_mobile').addClass('sidebar_mobile_show');
+});
+$('#nav_close').click(function () {
+  $('#sidebar_mobile').removeClass('sidebar_mobile_show');
+});
+$('#close_menu_mb').click(function () {
+  $('#sidebar_mobile').removeClass('sidebar_mobile_show');
+});
+
