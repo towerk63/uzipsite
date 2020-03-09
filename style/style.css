@@ -87,7 +87,7 @@ a:hover {
 
 .container {
   padding: 0px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .row {
@@ -285,6 +285,10 @@ a:hover {
   font-size: 20px;
 }
 
+.main_news {
+  padding-top: 40px;
+}
+
 .main_news h2 {
   display: inline-block;
 }
@@ -304,14 +308,6 @@ a:hover {
 
 .news_clone {
   padding-left: 30px;
-}
-
-#main_news_first {
-  padding-top: 60px;
-}
-
-.main_news {
-  padding-top: 50px;
 }
 
 .main_fields {
