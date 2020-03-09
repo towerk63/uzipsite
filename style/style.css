@@ -20,6 +20,11 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+#header_menu_main {
+  padding-top: 0px;
+}
+
 .header_menu_main {
   /* display: inline-block; */
   position: fixed;
@@ -29,6 +34,7 @@ a:hover {
   min-width: 100%;
   top: 0px;
 }
+
 .nav-item-mobile {
   width: 100%;
 }
@@ -78,6 +84,7 @@ a:hover {
 
 .container {
   padding: 0px;
+  padding-top: 50px;
 }
 
 .row {
@@ -275,11 +282,11 @@ a:hover {
 }
 
 #main_news_first {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .main_news {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .main_fields {
@@ -324,58 +331,72 @@ a:hover {
   -webkit-line-clamp: 999;
   height: auto;
 }
+
 .show_profile_mngm {
   height: 400px;
   background-color: #ccc;
   padding: 50px;
 }
+
 .show_profile_mngm div img {
   width: 100%;
 }
+
 .show_profile_mngm_img {
   padding-top: 20%;
 }
+
 .show_profile_mngm_img img {
   border-radius: 50%;
   overflow: hidden;
 }
+
 .text_profile {
   height: 200px;
   padding-right: 50px;
   overflow: hidden;
   overflow-y: scroll;
 }
+
 .all_mngm {
   margin-top: 20px;
 }
+
 .all_mngm div {
   margin-top: 10px;
 }
+
 .all_mngm div div {
   text-align: center;
 }
+
 .all_mngm div div img {
   width: 150px;
   height: 150px;
 }
+
 .all_mngm div div em {
   font-size: 11px;
 }
+
 .footer {
   background-color: #ccc;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .ft_news {
   border-top: 2px solid #a0a0a0;
   border-bottom: 2px solid #a0a0a0;
 }
+
 .ft_new_text {
   position: absolute;
   background-color: #0000006b;
   width: 93%;
   bottom: 10px;
 }
+
 .ft_new_text span {
   /* font-size: 11px; */
   font-weight: 600;
@@ -389,10 +410,12 @@ a:hover {
   width: 100%;
   height: 25px;
 }
+
 .ft_news_tt {
   color: #54ba46;
   margin-top: 20px;
 }
+
 .ft_new_text p {
   color: #fff;
   margin-bottom: 0px;
@@ -405,84 +428,120 @@ a:hover {
   width: 100%;
   height: 40px;
 }
+
 .ft_new_text p:hover {
   -webkit-line-clamp: 999;
   height: auto;
 }
+
 .ft_news div h2 {
   display: inline-block;
   width: 100%;
 }
+
 .ft_news_clone {
   position: relative;
   padding: 10px;
   height: 220px;
 }
+
 .ft_news_clone div {
   position: absolute;
 }
+
 .ft_news_clone a img {
   width: 265px;
   height: 200px;
 }
+
 .ft_inf {
   padding-top: 40px;
 }
+
 .ft_inf img {
   width: 100px;
 }
+
 .ft_cont {
   padding-top: 40px;
 }
+
 .ft_cont h2 {
   color: #54ba46;
 }
+
 .ft_cont p {
   display: inline-block;
   margin-top: 10px;
 }
+
 .ft_cont p em {
   display: block;
   width: 90%;
   margin-left: 30px;
 }
+
 .ft_cont p i {
   float: left;
   display: block;
   font-size: 15px;
   width: 15px;
 }
+
 .ft_contact {
   border-bottom: 2px solid #a0a0a0;
 }
+
 .ft_btm a {
   display: inline-block;
   font-weight: 600;
   margin-right: 20px;
   line-height: 45px;
 }
-.ft_btm_icon button{
+
+.ft_btm_icon button {
   border: 1px solid #54ba46;
   padding: 5px;
   background-color: #ccc0;
 }
-.ft_btm_icon_c{
+
+.ft_btm_icon_c {
   font-size: 30px;
   display: inline-block;
   width: 30px;
   height: 30px;
 }
-.ft_btm_icon_c_tt{
+
+.ft_btm_icon_c_tt {
   color: #26b9f6;
 }
-.ft_btm_icon_c_yt{
+
+.ft_btm_icon_c_yt {
   color: red;
 }
-.ft_btm_icon_c_fb{
+
+.ft_btm_icon_c_fb {
   color: #304e8a;
 }
-.ft_btm_icon_c_ig{
+
+.ft_btm_icon_c_ig {
   color: #006dc0;
+}
+.bntdwn{
+  width: 100%;
+  text-align: center;
+}
+.bntdwn button{
+  background-color: #006dc0;
+  width: 150px;
+  border: 0px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.bntdwn a{
+  line-height: 40px;
+  color: #fff;
+  font-weight: 600;
 }
 @media only screen and (max-width: 1200px) {
   .container {
@@ -514,6 +573,56 @@ a:hover {
 
 .main_news_duib {
   margin: 0px;
+}
+
+.ft_sayhelo h2 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  color: #54ba46;
+}
+
+.ipt {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid #54ba46;
+}
+
+.ft_sayhelo textarea {
+  padding-left: 10px;
+  height: 100px;
+  border: 1px solid #54ba46;
+}
+
+.sub {
+  height: 30px;
+  width: 100px;
+  border: 0px;
+  background-color: #54ba46;
+  border-radius: 10px;
+  float: right;
+  color: #fff;
+}
+
+.ft_ft {
+  clear: right;
+}
+
+.privacy {
+  margin-top: 60px;
+}
+
+.privacy_h1 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #54ba46;
+  text-transform: uppercase;
+  -moz-text-transform: uppercase;
+  -webkit-text-transform: uppercase;
+  -o-text-transform: uppercase;
 }
 
 @media only screen and (max-width: 784px) {

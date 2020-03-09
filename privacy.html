@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>privacy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="style/style.css"> -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <nav id="sidebar_mobile" class="sidebar_mobile container-fluid">
+    <div class="row">
+      <!-- khu vực tắt -->
+      <div id="nav_close" class="nav_close col-7"></div>
+      <!-- sidebar mobile show -->
+      <ul class="nav nav_menu_mobile justify-content-end col-5">
+        <button id="close_menu_mb" class="close_menu_mb">
+          <i class="fas fa-window-close"></i>
+        </button>
+        <li id="nav_item_au_mb" class="nav-item-mobile">
+          <a class="nav-link-mobile" href="#">About us&nbsp;
+            <i id="nav_link_icon_au" class="fas fa-sort-down"></i></a>
+          <ul id="nav_item_au_mb_show" class="nav-item-clone-mobile">
+            <li><a href="##">Management Team</a></li>
+            <li><a href="##">Advisors</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-mobile">
+          <a class="nav-link-mobile" href="#">Patent-pending</a>
+        </li>
+        <li class="nav-item-mobile">
+          <a class="nav-link-mobile" href="#">DaaS Platform</a>
+        </li>
+        <li id="nav_item_alcs_mb" class="nav-item-mobile">
+          <a class="nav-link-mobile" href="#">Application&nbsp;
+            <i id="nav_link_icon_alcs" class="fas fa-sort-down"></i></a>
+          <ul id="nav_item_alcs_mb_show" class="nav-item-clone-mobile">
+            <li><a href="##">Farming</a></li>
+            <li><a href="##">Business</a></li>
+            <li><a href="##">Military</a></li>
+            <li><a href="##">Others</a></li>
+          </ul>
+        </li>
+        <li id="nav_item_n_mb" class="nav-item-mobile">
+          <a class="nav-link-mobile" href="#">News&nbsp; <i id="nav_link_icon_n" class="fas fa-sort-down"></i></a>
+          <ul id="nav_item_n_mb_show" class="nav-item-clone-mobile">
+            <li>
+              <a
+                href="https://vnexpress.net/giao-duc/pho-giao-su-che-tao-may-bay-phun-thuoc-tru-sau-4053608.html">VnExpress</a>
+            </li>
+            <li>
+              <a
+                href="https://video.vnexpress.net/tin-tuc/thoi-su/thay-giao-tp-hcm-che-tao-may-bay-dieu-khien-phun-thuoc-tru-sau-3706949.html">VnExpress</a>
+            </li>
+            <li>
+              <a
+                href="https://dantri.com.vn/giao-duc-khuyen-hoc/pho-giao-su-37-tuoi-che-tao-may-bay-danh-cho-nha-nong-20200126133650407.htm">Dantri</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/watch/?v=485327812136341">Facebook</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item-mobile">
+          <a class="nav-link-mobile" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="container-fluid">
+    <div id="header_menu_main" class="container header_menu_main">
+      <div class="row">
+        <div class="logo_header col-10 col-sm-2">
+          <a href="index.html">
+            <img src="image/logo.png" alt="" />
+          </a>
+        </div>
+        <nav class="nav_menu col-2 col-sm-10">
+          <ul class="nav nav_menu_ul justify-content-end">
+            <li id="nav_item_au" class="nav-item">
+              <a class="nav-link" href="#">About us&nbsp;
+                <i id="nav_link_icon_au" class="fas fa-sort-down"></i></a>
+              <ul class="nav-item-clone">
+                <li><a href="##">Management Team</a></li>
+                <li><a href="##">Advisors</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Patent-pending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DaaS Platform</a>
+            </li>
+            <li id="nav_item_alcs" class="nav-item">
+              <a class="nav-link" href="#">Application&nbsp;
+                <i id="nav_link_icon_alcs" class="fas fa-sort-down"></i></a>
+              <ul class="nav-item-clone">
+                <li><a href="##">Farming</a></li>
+                <li><a href="##">Business</a></li>
+                <li><a href="##">Military</a></li>
+                <li><a href="##">Others</a></li>
+              </ul>
+            </li>
+            <li id="nav_item_n" class="nav-item">
+              <a class="nav-link" href="#">News&nbsp;
+                <i id="nav_link_icon_n" class="fas fa-sort-down"></i></a>
+              <ul class="nav-item-clone">
+                <li>
+                  <a
+                    href="https://vnexpress.net/giao-duc/pho-giao-su-che-tao-may-bay-phun-thuoc-tru-sau-4053608.html">VnExpress</a>
+                </li>
+                <li>
+                  <a
+                    href="https://video.vnexpress.net/tin-tuc/thoi-su/thay-giao-tp-hcm-che-tao-may-bay-dieu-khien-phun-thuoc-tru-sau-3706949.html">VnExpress</a>
+                </li>
+                <li>
+                  <a
+                    href="https://dantri.com.vn/giao-duc-khuyen-hoc/pho-giao-su-37-tuoi-che-tao-may-bay-danh-cho-nha-nong-20200126133650407.htm">Dantri</a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/watch/?v=485327812136341">Facebook</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <div class="nav_dbtn_header">
+            <button id="nav_btn_header" class="nav_btn_header">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="video_banner">
+      <video autoplay muted loop id="video_banner">
+        <source src="video/splash_v3.webm" type="video/mp4" />
+      </video>
+
+      <div class="content_banner">
+        <div class="container">
+          <h1>BUILD AND DEPLOY YOUR ADVANCED TECHNOLOGY SOLUTION TODAY</h1>
+          <p>
+            Your Drone-as-a Service (DaaS) Platform today integrating
+            BlockChain, AI, loT, Big Data Analytics, and VR/AR
+          </p>
+          <button id="btn_banner" onclick="videobanner()">Pause</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="container privacy">
+      <h1 class="privacy_h1">privacy</h1>
+      <h2>This Privacy Statement is effective as of 31 December 2019.</h2>
+      <p>At UZIP we recognize the importance of protecting your personal information and are committed to processing it
+        responsibly and in compliance with applicable data protection laws in all countries in which UZIP operates.</p>
+      <p>This Privacy Statement describes UZIP's general privacy practices that apply to personal information we
+        collect,
+        use and share about consumers and other individuals within our clients, business partners, supplier and other
+        organizations with which UZIP has or contemplates a business relationship.</p>
+      <p>This Privacy Statement provides more information in the online context, including recruitment. We may provide
+        additional or more specific information on the collection or use of personal information on websites or related
+        to
+        a specific product or service.</p>
+      <h2>Why and how we collect and use your personal information</h2>
+      <p>We may collect your personal information as an individual for various purposes, such as the following:</p>
+      <ul>
+        <li>
+          <h4>Access and use of websites or other online services</h4>
+          When entering one of our websites, or using an online service, we will record information necessary to
+          provide you with access, for the operation of the website and for us to comply with security and legal
+          requirements in relation to operating our site, such as passwords, IP address and browser settings. We also
+          collect information about your activities during your visit in order to personalize your website experience,
+          such as recording your preferences and settings, and to collect statistics to help us improve and further
+          develop our websites, products and services.
+
+        </li>
+        <li>
+          <h4>Responding to your request for information, order, or support</h4>
+          <p>When you contact us (online or offline) in connection with a request for information, to order a product
+            or
+            service, to provide you with support, or to participate in a forum or other social computing tool, we
+            collect information necessary to fulfill your request, to grant you access to the product or service, to
+            provide you with support and to be able to contact you. For instance, we collect your name and contact
+            information, details about your request and your agreement with us and the fulfillment, delivery and
+            invoicing of your order and we may include client satisfaction survey information. We retain such
+            information for administrative purposes, defending our rights, and in connection with our relationship
+            with
+            you.</p>
+          <p>When you provide your name and contact information to register in connection with such a request, the
+            registration may serve to identify you when you visit our websites. For ordering of most services and
+            products we require you to have registered an UZIPid. Registration may also allow you to customize and
+            control your privacy settings.</p>
+        </li>
+        <li>
+          <h4>Your use of UZIP Cloud services</h4>
+          <p>We collect information about your use of UZIP Cloud services to enable product features to operate, improve
+            your user experience, tailor our interactions with you, inform our clients on the overall use of the
+            services,
+            provide support and improve and develop our products and services. For details regarding the technologies we
+            employ, the personal information we collect, as well as how to control or block tracking or to delete
+            cookies.</p>
+        </li>
+        <li>
+          <h4>Contacting employees of our clients, prospects, partners and suppliers</h4>
+          <p>In our relationship with clients or prospects, partners and suppliers, they also provide us with business
+            contact information (such as name, business contact details, position or title of their employees,
+            contractors, advisors and authorized users) for purposes such as contract management, fulfillment, delivery
+            of
+            products and services, provision of support, invoicing and management of the services or the relationship.
+          </p>
+        </li>
+        <li>
+          <h4>Visitor information</h4>
+          <p>We register individuals visiting our sites and locations (name, identification and business contact
+            information) and use camera supervision for reasons of security and safety of persons and belongings, as
+            well
+            as for regulatory purposes.</p>
+        </li>
+        <li>
+          <h4>Marketing</h4>
+          <p>Most information we collect about you comes from our direct interactions with you. When you register for an
+            event we may collect information (online or offline) in relation to the event organization, and during an
+            event, such as participation in sessions and survey results. We combine the personal information we collect
+            to
+            develop aggregate analysis and business intelligence for conducting our business and for marketing purposes.
+            You can choose to receive information by email, telephone or postal mail about our products and services, or
+            sign-up for subscriptions. When visiting our websites or using our services we may provide you with
+            personalized information.</p>
+        </li>
+      </ul>
+      <p>Where we reference that we use your personal information in connection with a request, order, transaction or
+        agreement (or preparing for the same), or to provide you with services that you requested (such as a website),
+        we do this because it is necessary for the performance of an agreement with you.
+        Where we reference that we use your personal information in relation to marketing, improvement or development of
+        our products or services, for reasons of safety and security, or regulatory requirements other than in
+        connection with your agreement or request, we do this on the basis of our or a third party’s legitimate
+        interests, or with your consent.
+      </p>
+      <h2>Sharing of Personal Information</h2>
+      <p>As a global organization offering a wide range of products and services, with business processes, management
+        structures and technical systems that cross borders, UZIP has implemented global policies, along with standards
+        and procedures, for consistent protection of personal information. As a global company, we may share information
+        about you with our subsidiaries world-wide and transfer it to countries in the world where we do business in
+        accordance with this Privacy Statement.</p>
+      <p>Between UZIP controlled subsidiaries we only grant access to personal information on a need-to-know basis,
+        necessary for the purposes for which such access is granted. In some cases, UZIP uses suppliers located in
+        various
+        countries to collect, use, analyze, and otherwise process personal information on its behalf.</p>
+      <p>Where appropriate, UZIP may also share your personal information with selected partners to help us provide you,
+        or
+        the company you work for, products or services, or to fulfill your requests, or with your consent. When
+        selecting
+        our suppliers and partners, we take into account their data handling processes.</p>
+      <p>If UZIP decides to sell, buy, merge or otherwise reorganize businesses in some countries, such a transaction
+        may
+        involve the disclosure of personal information to prospective or actual purchasers, or the receipt of such
+        information from sellers. It is UZIP's practice to require appropriate protection for personal information in
+        these types of transactions.</p>
+      <p>Please be aware that in certain circumstances, personal information may be subject to disclosure to government
+        agencies pursuant to judicial proceeding, court order, or legal process. We may also share your personal
+        information to protect the rights or property of UZIP, our business partners, suppliers or clients, and others
+        when we have reasonable grounds to believe that such rights or property have been or could be affected.</p>
+      <h2>International Transfers</h2>
+      <p>The international footprint of UZIP involves a large number of transfers of personal information between
+        different subsidiaries, as well as to third parties located in the countries where we do business. Some
+        countries have implemented transfer restrictions for personal information, in connection with which UZIP takes
+        various measures, including:</p>
+      <ul>
+        <li>Where required, UZIP implements Standard Contractual Clauses approved by the EU Commission, or similar
+          contractual clauses in other jurisdictions. This includes transfers to suppliers or other third parties.
+        </li>
+        <li>UZIP complies with the <a style="color: blue;" href="http://cbprs.org/">APEC Cross Border Privacy Rules</a>
+          (CBPR) system.
+        </li>
+        <li>• UZIP certified to the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks. </li>
+      </ul>
+      <h2>Information Security and Accuracy</h2>
+      <p>We intend to protect your personal information and to maintain its accuracy. UZIP implements reasonable
+        physical,
+        administrative and technical safeguards to help us protect your personal information from unauthorized access,
+        use
+        and disclosure. For example, we encrypt certain sensitive personal information such as credit card information
+        when we transmit such information over the Internet. We also require that our suppliers protect such information
+        from unauthorized access, use and disclosure.</p>
+      <h2>Retention Period</h2>
+      <p>We will not retain personal information longer than necessary to fulfill the purposes for which it is
+        processed,
+        including the security of our processing complying with legal and regulatory obligations (e.g. audit, accounting
+        and statutory retention terms), handling disputes, and for the establishment, exercise or defense of legal
+        claims in the countries where we do business.</p>
+      <p>Because the circumstances may vary depending on the context and the services, the information provided in a
+        specific notice may provide more detailed information on applicable retention terms.</p>
+      <h2>Your Rights</h2>
+      <p>You can request to access, update, delete or correct your personal information. You also have the right to
+        object to direct marketing.</p>
+      <p>You may have additional rights pursuant to your local law applicable to the processing. For example, if the
+        processing of your personal information is subject to the EU General Data Protection Regulation ("GDPR"), and
+        your personal information is processed based on legitimate interests, you have the right to object to the
+        processing on grounds relating to your specific situation. Under GDPR you may also have the right to request to
+        have your personal information deleted or restricted and ask for portability of your personal information.</p>
+      <h2>Right to Lodge a Complaint</h2>
+      <p>In the event you consider our processing of your personal information not to be compliant with the applicable
+        data protection laws, you can lodge a complaint:</p>
+      <ul>
+        <li>With the competent data protection authority. The name and contact details of the Data Protection
+          Authorities
+          in the European Union.</li>
+      </ul>
+      <h2>Changes to our Privacy Statements</h2>
+      <p>We may update this Privacy Statement from time to time to reflect changes to our data governance practices. The
+        revised Privacy Statement will be posted here with an updated revision date. We encourage you to check back
+        periodically for any changes or updates. If we make a material change to our Privacy Statement, we will post a
+        notice at the top of this page for 30 days. By continuing to use our websites after such revision takes effect
+        we
+        consider that you have read and understand the changes.</p>
+
+    </div>
+    <div class="bntdwn"><button><a href="">DOWNLOAD</a></button></div>
+  </main>
+  <footer class="container-fluid footer">
+    <div class="container">
+      <section class="ft_news">
+        <div class="row">
+          <h2 class="ft_news_tt">Global Market News</h2>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a href="https://dronelife.com/">
+              <img src="image/pxfuel300x200.jpg" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>The Best Pairing for Wine May be a Drone</span>
+              <p>
+                With a wide and global customer base, drone mapping platform
+                DroneDeploy is continually identifying new uses for drone
+                technology. Precision agriculture was one of the early
+                adopters of drone technology: and now, more vineyards are
+                adopting drones to make better wine.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a href="https://www.spacewar.com/uav.html">
+              <img src="image/uav-destroyed-matrix-laser-hg.jpg" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>Navy installs ODIN laser weapon system to counter aerial
+                drones</span>
+              <p>
+                The U.S. Navy announced Thursday that it has installed a laser
+                weapon system that allows ships to counter aerial drones.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a href="https://www.dronedeploy.com/blog/">
+              <img src="image/d4c2e024-9746-4ac5-80c1-310e623b0a4b_TerrainAware-iPad.jpg" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>DroneDeploy Blog</span>
+              <p>
+                Learn from industry experts and customers in construction,
+                energy, agriculture, and more. Get product updates and news
+                from the DroneDeploy team.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a href="http://www.aero-news.net/">
+              <img src="image/AIRBORNE-SONEX-NTSB-030620.jpg" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>Scottish Airshow Cancelled, Sonex v Tree, Weather
+                Camera</span>
+              <p>
+                The Scottish International Airshow has been cancelled for 2020
+                amidst a disagreement between the event's organizers and local
+                officials.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="ft_news_tt">Press Release and Company News</h2>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a href="https://vnexpress.net/giao-duc/pho-giao-su-che-tao-may-bay-phun-thuoc-tru-sau-4053608.html">
+              <img src="image/may-bay-phun-thuoc-sau-7842-1581419837.jpg" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>Phó giáo sư chế tạo máy bay phun thuốc trừ sâu</span>
+              <p>
+                TS Vũ Ngọc Ánh - giảng viên Đại học Bách khoa TP HCM, bỏ hết
+                tiền dành dụm chế tạo máy bay phun thuốc trừ sâu tự động, giúp
+                nông dân bớt vất vả.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a
+              href="https://video.vnexpress.net/tin-tuc/thoi-su/thay-giao-tp-hcm-che-tao-may-bay-dieu-khien-phun-thuoc-tru-sau-3706949.html">
+              <img src="image/videoaaaa.png" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>Thầy giáo TP HCM chế tạo máy bay điều khiển phun thuốc trừ
+                sâu</span>
+              <p>
+                Sau nhiều năm nguyên cứu, thầy Vũ Ngọc Ánh (ĐH Bách Khoa TP
+                HCM) đã chế tạo thành công máy bay phun thuốc trừ sâu.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a
+              href="https://dantri.com.vn/giao-duc-khuyen-hoc/pho-giao-su-37-tuoi-che-tao-may-bay-danh-cho-nha-nong-20200126133650407.htm">
+              <img src="image/tit-1580013624858.jpg" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>Phó giáo sư 37 tuổi chế tạo máy bay dành cho nhà nông</span>
+              <p>
+                Một tuần trước Tết Canh Tý 2020, phóng viên Dân trí ghé tìm gặp anh Vũ Ngọc Ánh ở Bộ môn Kỹ thuật Hàng
+                không của Trường
+                ĐH Bách khoa TPHCM vẫn thấy anh miệt mài làm việc, trao đổi với đối tác nước ngoài cho nhiều dự án của
+                mình.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_news_clone">
+            <a href="https://www.facebook.com/847372608751026/videos/485327812136341/?v=485327812136341">
+              <img src="image/fbaaa.png" alt="" />
+            </a>
+            <div class="ft_new_text">
+              <span>MÁY BAY PHUN THUỐC TRỪ SÂU “MADE IN VIETNAM”</span>
+              <p>
+                Phó giáo sư - Tiến sỹ Vũ Ngọc Ánh cùng các cộng sự của mình tại trường ĐH Bách Khoa TP.HCM đã nghiên cứu
+                ra mô hình máy
+                bay phun thuốc trừ sâu giá thành bằng 1/3 thị trường. Qua 3 năm nghiên cứu, nhóm nghiên cứu đã hoàn
+                thiện phiên bản thứ
+                2 và tiếp tục nghiên cứu dòng máy bay phun thuốc trừ sâu phiên bản thứ 3. Ẩn bớt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ft_contact">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-5 ft_inf">
+            <img src="image/logo-nbg.png" alt="" />
+            <p>
+              The tightly and seamless intergration of advanced technologies,
+              processes anf people on our UZip platform help to bring products
+              closer to consumers, increasing the flexibility and adaptability
+              of the overall distribution network
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 ft_sayhelo">
+            <h2>Say hello</h2>
+            <form action="##">
+              <input class="ipt" type="text" placeholder="Name" name="username">
+              <input class="ipt" type="text" placeholder="Email" name="email">
+              <textarea name="mess" id="mess" cols="45" rows="5" placeholder="Message"></textarea>
+              <input class="sub" type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_cont">
+            <h2>Contact Information</h2>
+            <em><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp; +1
+              -048 - 780 - 8875</em><br />
+            <em><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              info@uzip.online</em><br />
+            <p>
+              <i class="fas fa-map-marker-alt"></i><em>
+                US Address: 15905 Cornerwood Court, Austin, Texas 78717,
+                USA</em>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="ft_ft">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-7 ft_btm">
+            <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="terms_of_use.html" target="_blank" rel="noopener noreferrer">Terms of use</a>
+            <a href="accessibility.html" target="_blank" rel="noopener noreferrer">Accessibility</a>
+            <a href="cookie_preferences.html" target="_blank" rel="noopener noreferrer">Cookie preferences</a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-2">
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 ft_btm_icon">
+            <button><a href="https://www.youtube.com/channel/UCNYFXal7ViqPA7G-gYwIvkQ/"><i
+                  class="ft_btm_icon_c ft_btm_icon_c_tt fab fa-twitter-square"></i></a></button>
+            <button><i class="ft_btm_icon_c ft_btm_icon_c_yt fab fa-youtube"></i></button>
+            <button><a
+                href="https://www.facebook.com/JWCLab/?eid=ARBw6hX88mhvyE-pq9cE7xzH-khh7bMPVjnqcAZ9vL-PZzvoGNzIY6CVaugeY4PGxGoZ6ZnJyOIoTa88"><i
+                  class="ft_btm_icon_c ft_btm_icon_c_fb fab fa-facebook-square"></i></a></button>
+            <button><i class="ft_btm_icon_c ft_btm_icon_c_ig fab fa-instagram"></i></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script type="text/javascript" src="script/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
