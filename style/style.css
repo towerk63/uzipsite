@@ -285,7 +285,18 @@ a:hover {
 
 .main_news h2 {
   display: inline-block;
-  border-bottom: 5px solid #54ba46;
+}
+
+.main_news p {
+  text-align: justify;
+}
+
+.main_news hr {
+  border: 3px solid #54ba46;
+  width: 115px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .news_clone {
@@ -308,6 +319,10 @@ a:hover {
   background-color: #fff;
 }
 
+.main_firlds_clone div p {
+  text-align: justify;
+}
+
 .main_firlds_clone div a img {
   width: 100%;
   height: 230px;
@@ -323,13 +338,13 @@ a:hover {
   display: inline-block;
   text-overflow: ellipsis;
   overflow: hidden;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: ;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   color: #111;
   width: 100%;
   padding: 10px;
-  height: 95px;
+  height: 75px;
 }
 
 .addmore {
@@ -343,30 +358,63 @@ a:hover {
   height: auto;
 }
 
-.show_profile_mngm {
-  height: 400px;
+.show_profile_mngm_o {
   background-color: #ccc;
-  padding: 50px;
+  padding: 40px;
+}
+
+.show_profile_mngm_img_o img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.show_profile_mngm_o {
+  height: 225px;
+  background-color: #ccc;
+}
+
+
+.text_profile_0 {
+  height: 135px;
+  padding-right: 50px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.text_profile {
+  height: 170px;
+  padding-right: 50px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.text_profile_0_name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text_profile_0 em {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .show_profile_mngm div img {
   width: 100%;
 }
 
+.show_profile_mngm {
+  height: 280px;
+  background-color: #ccc;
+  padding: 50px;
+}
+
 .show_profile_mngm_img {
-  padding-top: 20%;
+  /* padding-top: 20%; */
 }
 
 .show_profile_mngm_img img {
   border-radius: 50%;
   overflow: hidden;
-}
-
-.text_profile {
-  height: 200px;
-  padding-right: 50px;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
 .all_mngm {
@@ -466,7 +514,7 @@ a:hover {
 }
 
 .ft_inf {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .ft_inf img {
@@ -474,11 +522,12 @@ a:hover {
 }
 
 .ft_cont {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .ft_cont h2 {
   color: #54ba46;
+  margin-top: 10px;
 }
 
 .ft_cont p {
@@ -587,7 +636,7 @@ a:hover {
 }
 
 .show_profile_mngm_img {
-  padding: 0px;
+  /* line-height: 300px; */
 }
 
 .main_news_duib {
@@ -598,7 +647,7 @@ a:hover {
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #54ba46;
 }
 
@@ -612,6 +661,7 @@ a:hover {
 .ft_sayhelo textarea {
   padding-left: 10px;
   height: 100px;
+  width: 350px;
   border: 1px solid #54ba46;
 }
 
@@ -623,6 +673,7 @@ a:hover {
   border-radius: 10px;
   float: right;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .ft_ft {
