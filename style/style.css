@@ -82,7 +82,7 @@ a:hover {
 
 .logo_header a img {
   text-align: center;
-  height: 50px;
+  height: 80px;
 }
 
 .logo_header {
@@ -111,6 +111,7 @@ a:hover {
 
 .nav_menu {
   padding: 0px;
+  padding-top: 30px;
   width: 100%;
   /* background-color: #54ba46; */
 }
@@ -671,7 +672,7 @@ a:hover {
   }
 
   .logo_header a img {
-    height: 50px;
+    height: 80px;
   }
 
   .nav-link {
@@ -782,10 +783,6 @@ a:hover {
     width: 150px;
   }
 
-  .logo_header a img {
-    height: 50px;
-  }
-
   .nav-link {
     line-height: 50px;
   }
@@ -844,10 +841,6 @@ a:hover {
     display: inline-block;
     text-align: center;
     width: 100%;
-  }
-
-  .logo_header a img {
-    height: 50px;
   }
 
   .text_profile_0 {
