@@ -250,17 +250,17 @@ a:hover {
   margin: 0 auto;
   height: 100%;
   text-align: center;
-  padding-top: 32%;
+  padding-top: 28%;
 }
 
 .content_banner div p {
-  font-size: 18px;
-  text-shadow: 2px 2px 2px #54ba46;
+  font-size: 21px;
+  text-shadow: 1px 1px 2px #000;
   font-weight: 600;
 }
 
 .content_banner div h2 {
-  text-shadow: 2px 2px 2px #54ba46;
+  text-shadow: 1px 1px 2px #000;
   font-weight: 600;
   font-size: 2.3rem;
 }
