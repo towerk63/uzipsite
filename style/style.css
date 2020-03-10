@@ -249,15 +249,17 @@ a:hover {
   margin: 0 auto;
   height: 100%;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 23%;
 }
 
 .content_banner div p {
   font-size: 18px;
   text-shadow: 2px 2px 2px #54ba46;
+  font-weight: 600;
 }
 .content_banner div h2{
   text-shadow: 2px 2px 2px #54ba46;
+  font-weight: 600;
 }
 #btn_banner {
   position: absolute;
