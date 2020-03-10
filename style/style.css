@@ -303,7 +303,9 @@ a:hover {
   text-align: justify;
   padding-left: 10px;
 }
-
+.main_news p a{
+  color: #006dc0;
+}
 .main_news hr {
   border: 3px solid #54ba46;
   width: 115px;
