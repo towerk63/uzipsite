@@ -641,20 +641,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 1010px) {
-  .nav-link {
-    font-size: 11px;
-  }
-
   .container-fluid {
     width: 100%;
   }
 
   .logo_header a img {
-    height: 40px;
+    height: 50px;
   }
 
   .nav-link {
-    line-height: 40px;
+    line-height: 50px;
   }
 
   .video_banner {
@@ -752,9 +748,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 784px) {
-  .nav-link {
-    font-size: 10px;
-  }
 
   .container-fluid {
     width: 100%;
@@ -765,11 +758,11 @@ a:hover {
   }
 
   .logo_header a img {
-    height: 35px;
+    height: 50px;
   }
 
   .nav-link {
-    line-height: 35px;
+    line-height: 50px;
   }
 
   .video_banner {
@@ -819,13 +812,22 @@ a:hover {
   .logo_header {
     text-align: center;
   }
-
-  .logo_header a img {
-    height: 30px;
+  .text_profile_0_name, #posc_mngm, #pos_mngm{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
-
+  .logo_header a img {
+    height: 50px;
+  }
+  .text_profile_0{
+    padding-right: 0px;
+  }
+  .text_profile{
+    padding-right: 0px;
+  }
   .nav-link {
-    line-height: 30px;
+    line-height: 50px;
   }
 
   .show_profile_mngm_img {
