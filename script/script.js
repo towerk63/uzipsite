@@ -131,7 +131,7 @@ $list_mngm = [{
     "name": "Mr. Viet Tran",
     "posc": "BS E&T Eng.",
     "pos": "Branch Manager, DN Office",
-    "ind": "5+ years of experiences in researching and deploying Embedded systems(IoT, ML, Computer Vision). Experiences in developing high- speed / security applications on FPGA and developing secured firmware for Drones and IoT systems / Devices. Exceptional in building and motivating tech teams."
+    "ind": "5+ years of experiences in researching and deploying Embedded systems (IoT, ML, Computer Vision). Experiences in developing high- speed / security applications on FPGA and developing secured firmware for Drones and IoT systems / Devices. Exceptional in building and motivating tech teams."
   },
   {
     "link": "image",
