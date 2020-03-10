@@ -192,7 +192,9 @@ a:hover {
   color: #fff;
   line-height: 40px;
 }
-
+.nav-item-clone{
+  width: auto;
+}
 .nav-item-clone a:hover {
   color: #54ba46;
 }
@@ -287,6 +289,10 @@ a:hover {
 
 .main_news {
   padding-top: 40px;
+}
+
+.main_news span sup {
+  font-size: 13px;
 }
 
 .main_news h2 {
@@ -505,7 +511,9 @@ a:hover {
 .ft_inf {
   padding-top: 10px;
 }
-
+.ft_inf p{
+  text-align: justify;
+}
 .ft_inf img {
   width: 100px;
 }
@@ -639,7 +647,7 @@ a:hover {
 .ft_sayhelo h2 {
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   color: #54ba46;
 }
@@ -669,6 +677,26 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.sub_profile {
+  height: 30px;
+  width: 100px;
+  border: 0px;
+  background-color: #54ba46;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.profile_btn {
+  text-align: center;
+}
+
+.profile_btn button a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+}
+
 .ft_ft {
   clear: right;
 }
@@ -679,6 +707,7 @@ a:hover {
 
 .privacy p {
   padding-left: 15px;
+  text-align: justify;
 }
 
 .privacy_h1 {
@@ -691,6 +720,7 @@ a:hover {
   -webkit-text-transform: uppercase;
   -o-text-transform: uppercase;
 }
+
 
 @media only screen and (max-width: 768px) {
 
