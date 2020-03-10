@@ -28,7 +28,6 @@ a:hover {
   text-decoration: none;
   color: black;
 }
-
 /* .header_menu_main_row {
   padding: 0px 15px;
 } */
@@ -255,8 +254,11 @@ a:hover {
 
 .content_banner div p {
   font-size: 18px;
+  text-shadow: 2px 2px 2px #54ba46;
 }
-
+.content_banner div h2{
+  text-shadow: 2px 2px 2px #54ba46;
+}
 #btn_banner {
   position: absolute;
   bottom: 10px;
