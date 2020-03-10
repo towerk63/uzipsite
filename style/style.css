@@ -483,7 +483,6 @@ a:hover {
 }
 
 .ft_news {
-  border-top: 2px solid #a0a0a0;
   border-bottom: 2px solid #a0a0a0;
 }
 
@@ -540,6 +539,7 @@ a:hover {
   position: relative;
   padding: 10px;
   height: 220px;
+  margin-bottom: 45px;
 }
 
 .ft_news_clone div {
@@ -560,7 +560,7 @@ a:hover {
 }
 
 .ft_inf img {
-  width: 100px;
+  width: 108px;
 }
 
 .ft_cont {
@@ -595,11 +595,11 @@ a:hover {
 
 .ft_contact {
   border-bottom: 2px solid #a0a0a0;
+  margin-bottom: 14px;
 }
 
 .ft_btm a {
   display: inline-block;
-  font-weight: 600;
   margin-right: 20px;
   line-height: 45px;
 }
