@@ -28,6 +28,7 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
 /* .header_menu_main_row {
   padding: 0px 15px;
 } */
@@ -249,7 +250,7 @@ a:hover {
   margin: 0 auto;
   height: 100%;
   text-align: center;
-  padding-top: 23%;
+  padding-top: 25%;
 }
 
 .content_banner div p {
@@ -257,10 +258,13 @@ a:hover {
   text-shadow: 2px 2px 2px #54ba46;
   font-weight: 600;
 }
-.content_banner div h2{
+
+.content_banner div h2 {
   text-shadow: 2px 2px 2px #54ba46;
   font-weight: 600;
+  font-size: 2.3rem;
 }
+
 #btn_banner {
   position: absolute;
   bottom: 10px;
@@ -812,20 +816,27 @@ a:hover {
   .logo_header {
     text-align: center;
   }
-  .text_profile_0_name, #posc_mngm, #pos_mngm{
+
+  .text_profile_0_name,
+  #posc_mngm,
+  #pos_mngm {
     display: inline-block;
     text-align: center;
     width: 100%;
   }
+
   .logo_header a img {
     height: 50px;
   }
-  .text_profile_0{
+
+  .text_profile_0 {
     padding-right: 0px;
   }
-  .text_profile{
+
+  .text_profile {
     padding-right: 0px;
   }
+
   .nav-link {
     line-height: 50px;
   }
