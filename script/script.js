@@ -149,7 +149,11 @@ function show_profile_mngm(id) {
   $('#posc_mngm').text($list_mngm[id].posc);
   $('#pos_mngm').text($list_mngm[id].pos);
   $('#ind_mngm').text($list_mngm[id].ind);
+  $('#profile_mngm_oo').css('display', 'flex');
 };
+$('#profile_btn_mngm').click(function () {
+  $('#profile_mngm_oo').css('display', 'none');
+})
 $('#a_vu').click(function () {
   show_profile_mngm(0);
 });
@@ -172,8 +176,7 @@ $('#vt_mngm').click(function () {
   show_profile_mngm(6);
 });
 
-$list_adv = [
-  {
+$list_adv = [{
     "link": "image/nw.jpg",
     "name": "Nathan Williams",
     "ind": "Nathan Williams is the founder of Minespider, a blockchain platform for tracking conflict-free minerals. Minespider transform supply chain due diligence from a service that is performed into a commodity that is purchased. The company market is roughly 4.25 billion USD and it operates in the 1.7 trillion USD mining industry. He is a Canadian blockchain entrepreneur based in Berlin, Germany. Nathan is founder of NW HinWise Solutions UG, a software development company that builds other companies. He is also founder and managing director of Subvise, a software and automated solutions to assist companies with EU REACH chemical regulation. In Blockchain community, Nathan cohosts an audio show exploring the world of blockchain and crypto for thousands of non-technical subscribers twice a week, called the Analysis in Chains podcast."
@@ -209,12 +212,17 @@ $list_adv = [
     "ind": "Highly accomplished and award-winning IT Executive and Corporate Officer with extensive record of success in product management, professional services, global program management, and startup operations. Special expertise in Big data solutions, high performance computing, strategic planning, business-IT alignment, business transformation, change management, service-oriented architecture (SOA), and process innovation. Proven ability to deliver major revenue growth by managing IT to create business value. Knowledgeable in eSCM, Prince 2, CMM, COBIT, and ITIL methodologies and requirements. Strong technical background. Excellent problem-solving, relationship management, and academic instruction skills. Expert in specialties such as Big Data Solutions, High Performance Computing, and IT Governance. Responsible for design and development of DIWO- A Cognitive Analytics Solutions Platform. Vice President – Marketing and Business Development at TATA CRL (Acquired by TCS): Responsible for developing and crystalizing Tata CRL’s strategic positioning in the HIgh Performance Computing space; leading company’s ecosystem development strategy, managing and establishing strategic partnerships, developing executive relationships in creating joint solutions and marketing programs to drive new sources of revenue; leading all aspects of marketing and solutions management, developing and executing long and short range marketing strategies to ensure growth in profit and market share; responsible for expansion of Tata CRL business worldwide by establishing public HPC clouds in various geographies. CTO and Co-Founder of Exterprise: Following acquisition of Exterprise by Commerce One (a $20B global B2B products and services technology company), assumed its CTO role and oversaw 300 direct and indirect reports. Formulated technology roadmap and strategy. Led development of corporate architecture and web-based solutions. Managed partner relationships. Directed successful integration of Exterprise and Commerce One products and technologies, resulting in unified product suite for B2B eCommerce networks. Earned Premier CTO of the Year 2000 Award from ComputerWorld Magazine. Recognized with National Business Incubators Association Award for Founder of Best Software Company of the Year (2000). Defined and maintained standard solutions for Distributed Systems Services Management, for use by IBM Solution Delivery centers worldwide. Member of review team that approved RFPs and pricing models. Was key contact point between IBM Research and IBM Managed Operations while at IBM, facilitating technology transfer in CRM and related areas. Faculty Member in Computer Science at Indian Institute of Technology, Delhi January 1980 – December 1985 (6 years), Established the B.Tech program in Computer Science and Engineering in cohort with other four IIT’s in India."
   }
 ];
+
 function show_profile_adv(id) {
   $('#image_adv').attr('src', $list_adv[id].link);
   $('#name_adv').text($list_adv[id].name);
   $('#ind_adv').text($list_adv[id].ind);
+  $('#profile_adv_oo').css('display', 'flex');
 }
 
+$('#profile_btn_adv').click(function () {
+  $('#profile_adv_oo').css('display', 'none');
+})
 $('#hrn_adv').click(function () {
   show_profile_adv(1);
 });

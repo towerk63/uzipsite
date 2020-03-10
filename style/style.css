@@ -385,6 +385,21 @@ a:hover {
 .show_profile_mngm_o {
   background-color: #ccc;
   padding: 40px;
+  display: none;
+}
+
+.profile_show_btn {
+  text-align: right;
+}
+
+.profile_show_btn button {
+  border: 0px;
+  background-color: #54ba46;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
 }
 
 .show_profile_mngm_img_o img {
@@ -409,6 +424,11 @@ a:hover {
   text-align: justify;
 }
 
+.profile_mngm_close {
+  width: 100%;
+  text-align: right;
+}
+
 .text_profile_0_name {
   font-size: 1.25rem;
   font-weight: 600;
@@ -426,6 +446,7 @@ a:hover {
 .show_profile_mngm {
   background-color: #ccc;
   padding: 50px;
+  display: none;
 }
 
 .show_profile_mngm_img img {
