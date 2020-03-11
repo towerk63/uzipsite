@@ -89,12 +89,12 @@ $list_mngm = [{
     "name": "Prof. Anh Vu",
     "posc": "PhD Aerospace Eng.",
     "pos": "Chief Scientist",
-    "ind": "15+ years of experiences in aerospace design,  aerodynamics analysis, drone and PAV designwith 10+ related projects, 30+ related publications, patents, and awards."
+    "ind": "15+ years of experiences in aerospace design,  aerodynamics analysis, drone and PAV design with 10+ related projects, 30+ related publications, patents, and awards."
   },
   {
     "link": "image/ln.jpg",
     "name": "Prof. Luan Nguyen",
-    "posc": "PhD, ECE, Exec MBA",
+    "posc": "PhD. ECE, Exec MBA",
     "pos": "CEO/President",
     "ind": "35+ years of managerial and technology experiences. 16 years with IBM. 1997-2000 IBM CTO IBM Global Services. Manage successfully many tech companies in US and SE Asia."
   },
@@ -117,7 +117,7 @@ $list_mngm = [{
     "name": "Mr. Liem Doan",
     "posc": "BS Electrical Eng.",
     "pos": "Chief Marketing Officer",
-    "ind": "An all-round business executive with 6 years of hand-on management experiences, excellent program planning skills, and established large networked connections in the digital economy.Exceptional in running business programs with strong business development ability in grants writings, securing sponsorships, and in organizing other activities that can bring additional stream of revenues to business partnerships."
+    "ind": "30+ years of aerospace C- level sales and marketing experiences in related commercial, military,and defense products in N.America, Europe, Middle East, Asia, and the Pacific Rim."
   },
   {
     "link": "image/td.jpg",

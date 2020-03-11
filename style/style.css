@@ -68,7 +68,7 @@ a:hover {
 }
 
 .nav_menu_mobile {
-  height: 100vh;
+  height: 240px;
   display: inline-block;
   background-color: #54ba46;
   overflow-y: scroll;
@@ -167,7 +167,7 @@ a:hover {
 
 .close_menu_mb i {
   font-size: 30px;
-  color: red;
+  color: #ccc;
 }
 
 .nav-link-mobile:hover {
