@@ -117,7 +117,7 @@ $list_mngm = [{
     "name": "Mr. Liem Doan",
     "posc": "BS Electrical Eng.",
     "pos": "Chief Marketing Officer",
-    "ind": "30+ years of aerospace C- level sales and marketing experiences in related commercial, military,and defense products in N.America, Europe, Middle East, Asia, and the Pacific Rim."
+    "ind": "30+ years of aerospace C- level sales and marketing experiences in related commercial, military, and defense products in N.America, Europe, Middle East, Asia, and the Pacific Rim."
   },
   {
     "link": "image/td.jpg",
