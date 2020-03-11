@@ -354,7 +354,9 @@ a:hover {
 .main_firlds_clone div {
   background-color: #fff;
 }
-
+#main_news_first{
+  padding-top: 80px;
+}
 .main_firlds_clone div p {
   text-align: justify;
 }
