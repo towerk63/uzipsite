@@ -317,7 +317,14 @@ a:hover {
 .main_news {
   padding-top: 40px;
 }
-
+.main_news_imgae{
+  width: 100%;
+  text-align: center;
+}
+.main_news_imgae img{
+  width: 78.5%;
+  margin: 10px 10px 20px 10px;
+}
 .main_news span sup {
   font-size: 13px;
 }
