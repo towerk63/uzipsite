@@ -113,7 +113,7 @@ $list_mngm = [{
     "ind": "20+ years of experiences in corporate finance and accounting. Managed procurement organizations with an approximate spending of $350M annually. Had taken many executive leading roles such as Corporate Finance/Management Group Manager providing financial support for a Global Finance company, or as Human Resource Finance Manager providing financial support for Corporate HR to include Flash and to commit spending, headcount and reporting, managing the accurate reporting of monthly and quarter financials and forecasts into various information systems."
   },
   {
-    "link": "image/ld.jpg",
+    "link": "image/ld.png",
     "name": "Mr. Liem Doan",
     "posc": "BS Electrical Eng.",
     "pos": "Chief Marketing Officer",
