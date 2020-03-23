@@ -15,7 +15,6 @@ em {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
-
 .container-fluid {
   width: 100%;
 }
@@ -103,8 +102,8 @@ a:hover {
   line-height: 50px;
   padding: 0px 15px;
   color: #fff;
+  cursor: pointer;
 }
-
 .nav-link:hover {
   color: #fff;
 }
@@ -151,9 +150,10 @@ a:hover {
   font-size: 14px;
 }
 
-.nav-item-clone-mobile li a {
+.nav-item-clone-mobile li a, .nav-item-clone-mobile li span {
   color: #fff;
   font-size: 11px;
+  cursor: pointer;
 }
 
 .close_menu_mb {
@@ -179,6 +179,7 @@ a:hover {
   color: #fff;
   line-height: 35px;
   width: 100%;
+  cursor: pointer;
 }
 
 .nav-item-clone {
@@ -192,11 +193,12 @@ a:hover {
   z-index: 2;
 }
 
-.nav-item-clone a {
+.nav-item-clone a , .nav-item-clone span{
   width: 100%;
   display: inline-block;
   color: #fff;
   line-height: 40px;
+  padding: 0px 10px;
 }
 
 .nav-item-clone {
@@ -340,8 +342,14 @@ a:hover {
 
 .main_news p a {
   color: #006dc0;
+  background-color: #fff0;
+  border: 0px;
 }
-
+.main_news p a:hover{
+  color: #006dc0;
+  background-color: #fff;
+  border: 0px;
+}
 .main_news hr {
   border: 3px solid #54ba46;
   width: 115px;
@@ -698,8 +706,8 @@ a:hover {
 
   .nav-link {
     line-height: 50px;
+    background-color: #fff;
   }
-
   .video_banner {
     height: 450px;
   }
@@ -785,8 +793,50 @@ a:hover {
   -webkit-text-transform: uppercase;
   -o-text-transform: uppercase;
 }
-
-
+.modal-title{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #54ba46;
+}
+.frm_login form{
+  width: 40%;
+  margin: 0px auto;
+}
+.frm_login form div{
+  width: 100%;
+}
+.frm_login form div input{
+  padding-left: 10px;
+  border: 1px solid #54ba46;
+  border-radius: 5px;
+}
+.frm_login form div p{
+  margin: 10px 0px 5px 0px;
+}
+.regis_form_ip{
+  width: 100%;
+  text-align: center;
+}
+.regis_form_ip input{
+  margin: 10px 0px;
+  border: 0px;
+  background-color: #54ba46;
+  border-radius: 5px;
+  color: #fff;
+}
+.regis_form_p span{
+  color: #304e8a;
+  cursor: pointer;
+}
+.login{
+  display: none;
+}
+.msg{
+  color: red;
+  font-size: 11px;
+}
 @media only screen and (max-width: 768px) {
 
   .container-fluid {

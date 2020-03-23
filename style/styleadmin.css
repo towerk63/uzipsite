@@ -1,0 +1,123 @@
+*{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_login{
+    background-image: url(../image/bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.cont_login{
+    padding-top: 100px;
+}
+.cont_login_title{
+    text-align: center;
+}
+.cont_login_form{
+    padding-bottom: 10px;
+    background-color: #a1ff947a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px #c3bdbd;
+}
+.menu{
+    background-color: #54ba46;
+}
+.nav-item{
+    float: right;
+}
+.nav-link{
+    text-transform: uppercase;
+    background-color: #54ba46;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: #54ba46;
+    background-color: #fff;
+    border: 1px solid transparent
+}
+.active{
+    color: #54ba46;
+    background-color: #fff;
+}
+.logout:hover{
+    color: #fff;
+    background-color: red;
+    border: 1px solid transparent
+}
+.form-inline{
+    margin-top: 10px;
+}
+.headertb{
+    text-align: center;
+    font-weight: 600;
+}
+.rowactive{
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    height: 80vh;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+}
+.row_col {
+    padding: 0px;
+    text-align: center;
+}
+.btn{
+    color: #fff;
+    padding: 5px;
+    font-size: 11px;
+    width: 75px;
+    margin-top: 6px;
+    border: 0px;
+}
+.form-control{
+    height: 28px;
+    margin-top: 5px;
+    font-size: 11px;
+}
+.testtb{
+    line-height: 110px;
+    border-top: 1px solid red;
+}
+.main_ctn{
+    display: none;
+}
+.main_active{
+    display: block;
+}
+.addadmin{
+    float: right;
+}
+.form-inline{
+    display: block;
+}
+.inputtb{
+    width: 100%;
+    margin-bottom: 13px;
+}
+.btnfile{
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.btnuser{
+    border-top: 1px solid red;
+    height: 125px;
+    padding-bottom: 2px;
+}
+@media only screen and (min-width: 0px) and (max-width: 992px) {
+    *{
+        font-size: 11px;
+    }
+  .container {
+    min-width: 100%;
+  }
+  .btn {
+      width: 100%;
+      padding: 2px;
+  }
+  .btnuser{
+      height: 122px;
+  }
+}
