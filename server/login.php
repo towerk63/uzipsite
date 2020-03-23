@@ -21,14 +21,14 @@
 		}
     }
     if($count == 1){
-        echo "Tài khoản chưa được kích hoạt";
+        echo "The account has not been activated";
     }else if($count == 2){
         setcookie('login', 'ok', time() + 999999);
         setcookie('fullname', $row["fullname"], time() + 999999);
         echo $row["fullname"];
         
     }else {
-        echo "Đăng nhập thất bại";
+        echo "Login failed";
     }
     mysqli_close($conn);
 ?>
